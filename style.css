@@ -37,7 +37,16 @@ body {
 }
 
 @media (min-width: 1200px) { /* для desktop экранов более 1200 px */
-
+    h1 {
+        font-family: 'Gilroy', sans-serif;
+        font-size: 80px;
+        font-weight: 600;
+        line-height: 80px;
+        text-align: left;
+    }
+    .hero {
+        height: 1861px;
+    }
 }
 
 @media (max-width: 1200px) { /* для экранов до 1200 px*/
