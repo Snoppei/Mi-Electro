@@ -1,0 +1,54 @@
+@font-face {
+    font-family: 'Gilroy';
+    src: url('assets/fonts/Gilroy/Gilroy-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Gilroy';
+    src: url('assets/fonts/Gilroy/Gilroy-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Gilroy';
+    src: url('assets/fonts/Gilroy/Gilroy-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Gilroy';
+    src: url('assets/fonts/Gilroy/Gilroy-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 0;
+}
+
+body {
+    font-family: 'Gilroy', Gilroy, sans-serif;
+}
+
+@media (min-width: 1200px) { /* для desktop экранов более 1200 px */
+
+}
+
+@media (max-width: 1200px) { /* для экранов до 1200 px*/
+    
+}
+@media (max-width: 992px) { /* планшеты */
+    
+}
+@media (max-width: 768px) { /* для мобилок в альбомной ориентации */
+    
+}
+@media (max-width: 562px) { /* для мобилок в портретной ориентации */
+    
+}
