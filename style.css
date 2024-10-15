@@ -40,11 +40,10 @@ body {
 @media (min-width: 1200px) { /* для desktop экранов более 1200 px */
     .header {
         /* margin: ; */
-        padding: 40px 140px 40px 140px;
-        height: 134px;
+        height: 8vh;
         display: grid;
         grid-template-columns: repeat(9, 1fr);
-        gap: 10px;
+        gap: 0.7vw;
     }
     .logo {
         grid-column: 1;
@@ -54,8 +53,8 @@ body {
         align-items: center;
         display: flex;
         flex-direction: row;
-        gap: 40px;
-        grid-column: 2 / 7;
+        gap: 3vw;
+        grid-column: 2 / 8;
         grid-row: 1;
     }
     .nav-menu__item {
@@ -68,6 +67,11 @@ body {
         border-radius: 65px;
         background-color: #F1F1F1;
         color: #151515;
+        height: 8vh;
+        width: 10vw;
+        align-self: center;
+        font-weight: 700;
+        font-size: 16px;
         
     }
     h1 {
@@ -78,8 +82,31 @@ body {
         text-align: left;
     }
     .hero {
+        padding: 6vh 10vw 6vh 10vw;
         height: 1861px;
         background-image: url(assets/hero-section-bg.png);
+        background-size: contain;
+        box-sizing: border-box;
+    }
+    .preview {
+        margin: 19vh 0 19vh 0;
+    }
+    .preview-title {
+        font-weight: 600;
+        line-height: 85px;
+        font-size: 80px;
+        margin-bottom: 30px;
+    }
+    .preview-title_white {
+        color: #F1F1F1;
+    }
+    .preview-description {
+        font-weight: 600;
+        line-height: 36px;
+        font-size: 30px;
+    }
+    .preview-description_orange {
+        color: #FF4C0D;
     }
 }
 
