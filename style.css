@@ -34,9 +34,42 @@ p {
 
 body {
     font-family: 'Gilroy', Gilroy, sans-serif;
+    font-weight: 400;
 }
 
 @media (min-width: 1200px) { /* для desktop экранов более 1200 px */
+    .header {
+        /* margin: ; */
+        padding: 40px 140px 40px 140px;
+        height: 134px;
+        display: grid;
+        grid-template-columns: repeat(9, 1fr);
+        gap: 10px;
+    }
+    .logo {
+        grid-column: 1;
+        align-self: center;
+    }
+    .nav-menu {
+        align-items: center;
+        display: flex;
+        flex-direction: row;
+        gap: 40px;
+        grid-column: 2 / 7;
+        grid-row: 1;
+    }
+    .nav-menu__item {
+        text-decoration: unset;
+        background-color: rgb(0, 0, 0 / 0);
+        color:#F1F1F1;
+    }
+    .button-buy {
+        grid-column: 9;
+        border-radius: 65px;
+        background-color: #F1F1F1;
+        color: #151515;
+        
+    }
     h1 {
         font-family: 'Gilroy', sans-serif;
         font-size: 80px;
@@ -46,6 +79,7 @@ body {
     }
     .hero {
         height: 1861px;
+        background-image: url(assets/hero-section-bg.png);
     }
 }
 
