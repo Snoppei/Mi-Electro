@@ -85,7 +85,7 @@ body {
         padding: 6vh 10vw 6vh 10vw;
         height: 1861px;
         background-image: url(assets/hero-section-bg.png);
-        background-size: contain;
+        background-size: cover;
         box-sizing: border-box;
     }
     .preview {
@@ -104,9 +104,69 @@ body {
         font-weight: 600;
         line-height: 36px;
         font-size: 30px;
+        margin-bottom: 10vh;
     }
     .preview-description_orange {
         color: #FF4C0D;
+    }
+    .switch-btn {
+        display: inline-block;
+        width: 248px; /* ширина переключателя */
+        height: 54px; /* высота переключателя */
+        border-radius: 108px; /* радиус скругления */
+        background: rgba(0, 0, 0, 0); /* цвет фона */
+        border-style: solid;
+        border-width: 3px;
+        border-color: #F1F1F1;
+        z-index: 0;
+        margin: 0;
+        padding: 0;
+        cursor: pointer;
+        position: relative;
+        transition-duration: 300ms; /* анимация */
+        box-sizing: content-box;
+    }
+    .switch-btn::after {
+        content: "";
+        height: 54px; /* высота кнопки */
+        width: 118px; /* ширина кнопки */
+        border-radius: 65px; /* радиус кнопки */
+        background: #F1F1F1; /* цвет кнопки */
+        /*top: -1px;  положение кнопки по вертикали относительно основы */
+        left: -1px;/* положение кнопки по горизонтали относительно основы */
+        transition-duration: 300ms; /* анимация */
+        position: absolute;
+        z-index: 1;
+    }
+    .switch-on {
+        background: rgb(0, 0, 0 / 0);
+    }
+    .switch-on::after {
+        left: 131px;
+        background: #F1F1F1;
+    }
+    .switch-btn__content {
+        position: absolute;
+        font-family: Gilroy;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 24px;
+        text-align: left;
+        z-index: 2;
+    }
+    .switch-btn__content_white {
+        color: #F1F1F1;
+    }
+    .switch-btn__content_black {
+        color: #151515;
+    }
+    .switch-btn__content_first {
+        left: 30px;
+        top: 15px;
+    }
+    .switch-btn__content_second {
+        left: 165px;
+        top: 15px;
     }
 }
 
