@@ -89,7 +89,7 @@ body {
         box-sizing: border-box;
     }
     .preview {
-        margin: 19vh 0 19vh 0;
+        margin: 19vh 0 30vh 0;
     }
     .preview-title {
         font-weight: 600;
@@ -167,6 +167,17 @@ body {
     .switch-btn__content_second {
         left: 165px;
         top: 15px;
+    }
+    .title {
+        font-family: Gilroy;
+        font-size: 45px;
+        font-weight: 500;
+        line-height: 49.5px;
+        text-align: left;
+        color: #F1F1F1
+    }
+    .title_orange {
+        color: #FF4C0D;
     }
 }
 
