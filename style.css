@@ -37,9 +37,8 @@ body {
     font-weight: 400;
 }
 
-@media (min-width: 1200px) { /* для desktop экранов более 1200 px */
+@media (min-width: 1300px) { /* для desktop экранов более 1300 px */
     .header {
-        /* margin: ; */
         height: 8vh;
         display: grid;
         grid-template-columns: repeat(9, 1fr);
@@ -153,20 +152,31 @@ body {
         line-height: 24px;
         text-align: left;
         z-index: 2;
-    }
-    .switch-btn__content_white {
-        color: #F1F1F1;
-    }
-    .switch-btn__content_black {
-        color: #151515;
+        transition-duration: 300ms;
+        transition-timing-function: ease-in-out;
     }
     .switch-btn__content_first {
         left: 30px;
         top: 15px;
+        color: #151515;
     }
+
     .switch-btn__content_second {
         left: 165px;
         top: 15px;
+        color: #F1F1F1;
+    }
+
+    .switch-on > .switch-btn__content_first {
+        /* transition-duration: 300ms;
+        transition-timing-function: ease-in-out; */
+        color: #F1F1F1;
+    }
+
+    .switch-on > .switch-btn__content_second {
+        /* transition-duration: 300ms;
+        transition-timing-function: ease-in-out; */
+        color: #151515;
     }
     .title {
         font-family: Gilroy;
@@ -179,6 +189,61 @@ body {
     .title_orange {
         color: #FF4C0D;
     }
+
+    .features {
+        display: flex;
+        flex-direction: column;
+        gap: 10vh;
+    }
+
+    .features-list {
+        display: flex;
+    }
+    .features-list_horisontal {
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+    }
+    .features-card {
+        width: 25vw;
+        opacity: 40%;
+    }
+    .features-card:hover {
+        transition-duration: 300ms;
+        transition-timing-function: ease-in-out;
+        opacity: 100%;
+    }
+    .features-card__line {
+        background-color: #F1F1F1;
+        height: 0.3vh;
+        width: 100%;
+        margin: 1vh 0 1vh 0;
+    }
+    .features-card:hover > .features-card__line {
+        background-color:#FF4C0D;
+    }
+    .features-card__title {
+        font-family: Gilroy;
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 24px;
+        text-align: left;
+        color: #F1F1F1;
+    }
+    .features-card__text-content {
+        font-family: Gilroy;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 21px;
+        letter-spacing: -0.01em;
+        text-align: left;
+        color: #F1F1F1;
+    }
+
+}
+
+@media (max-width: 1300px) {
+
 }
 
 @media (max-width: 1200px) { /* для экранов до 1200 px*/
