@@ -83,6 +83,8 @@ body::-webkit-scrollbar-track {
         border-radius: 65px;
         background-color: #F1F1F1;
         color: #151515;
+        border-color: rgba(0, 0, 0, 0);
+        box-shadow: none;
         height: 8vh;
         width: 10vw;
         align-self: center;
