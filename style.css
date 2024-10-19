@@ -119,8 +119,6 @@ body::-webkit-scrollbar-track {
     }
     .hero {
         padding: 6vh 10vw 6vh 10vw;
-        height: 1861px; /* в адапитвной такого быть не должно вроде как
-        в других версиях нужно менять по идее */
         background-image: url(assets/hero-section-bg.png);
         background-size: cover;
         box-sizing: border-box;
