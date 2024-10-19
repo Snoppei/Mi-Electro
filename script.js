@@ -4,17 +4,33 @@ $('.switch-btn').click(function () {
     $(this).toggleClass('switch-on');
 });
 
-$('.features-card_first').hover(function(){
-    $('.features-image_current').css("background-image", "url(assets/speedModes.png)");
-    $('.features-image_next').css("background-image", "url(assets/batteryRecoverySystem.png)");
+const imageUrls = [
+    'assets/speedModes.png',
+    'assets/batteryRecoverySystem.png',
+    'assets/highCapacityBattery.png'
+];
+
+$('.features-card_first').click(function () {
+    smootlyChangeFeaturesCardsBG(imageUrls[0], imageUrls[1]);
 });
 
-$('.features-card_second').hover(function(){
-    $('.features-image_current').css("background-image", "url(assets/batteryRecoverySystem.png)");
-    $('.features-image_next').css("background-image", "url(assets/highCapacityBattery.png)");
+$('.features-card_second').click(function () {
+    smootlyChangeFeaturesCardsBG(imageUrls[1], imageUrls[2]);
 });
 
-$('.features-card_third').hover(function(){ // в гугле такая конструкция работает стремно, а в мозилле вообще не работает...
-    $('.features-image_current').css("background-image", "url(assets/highCapacityBattery.png)");
-    $('.features-image_next').css("background-image", "url(assets/speedModes.png)");
+$('.features-card_third').click(function () {
+    smootlyChangeFeaturesCardsBG(imageUrls[2], imageUrls[0]);
 });
+
+function smootlyChangeFeaturesCardsBG(imgUrlToChangeCurrent, imgUrlToChangeNext) {
+    $('.features-image_current').css('opacity', '0');
+    $('.features-image_next').css('opacity', '0');
+    setTimeout(function () {
+        $('.features-image_current').css("background-image", `url(${imgUrlToChangeCurrent})`);
+        $('.features-image_next').css("background-image", `url(${imgUrlToChangeNext})`);
+    }, 300);
+    setTimeout(function () {
+        $('.features-image_current').css('opacity', '1');
+        $('.features-image_next').css('opacity', '1');
+    }, 500);
+}
