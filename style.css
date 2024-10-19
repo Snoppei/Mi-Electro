@@ -284,36 +284,30 @@ body::-webkit-scrollbar-track {
         grid-template-rows: repeat(4, 1fr);
         height: 62vh;
         width: 100%;
-        /* transition-duration: 300ms; */
-        /* transition-property: opacity; */
     }
     .features-image_current {
         border-radius: 15px;
         background-image: url(assets/speedModes.png);
         transition-property: background-image, opacity;
-        /* opacity: 1; */
         transition-duration: 300ms;
         transition-timing-function: ease;
         transform: rotateY(3.142rad);
         width: 100%;
         background-size: cover;
-        background-position: center !important;
+        background-position: center;
         grid-column: 1 / 24;
         grid-row: 1 / 5;
     }
     .features-image_next {
         border-radius: 15px;
         background-image: url(assets/batteryRecoverySystem.png);  
-        /* animation-name: smoothlyOpacity;
-        animation-duration: 500ms; */
         transition-property: background-image, opacity;
-        /* opacity: 1; */
         transition-duration: 300ms;
         transition-timing-function: ease;
         transform: rotateY(3.142rad);
         width: 100%;
         background-size: cover;
-        background-position: 85% 100% !important;
+        background-position: 85% 100%;
         grid-column: 25/ 36;
         grid-row: 1 / 4;
     }
