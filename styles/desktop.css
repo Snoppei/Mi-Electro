@@ -365,6 +365,43 @@ body::-webkit-scrollbar-track {
         grid-column: 25/ 36;
         grid-row: 1 / 4;
     }
+
+
+
+        /*============================================== subsection 2 ============================================== */
+
+
+
+
+
+    .subsection-feature {
+        background-image: url(../assets/speedSubSectionBG.png);
+        width: 100vw;
+        height: 70vh;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: bottom;
+    }
+    .subsection-feature_container {
+        padding: 6vh 10vw 6vh 10vw;
+        height: 100%;
+        width: 100%;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    .subsection-card {
+        display: flex;
+        flex-direction: column;
+        gap:30px;
+    }
+    .logo__always-on {
+        display: inline-block;
+        margin-right: auto;
+    }
+    
 }
 
 @media (max-width: 1300px) {
@@ -655,6 +692,49 @@ body::-webkit-scrollbar-track {
         grid-column: 25/ 36;
         grid-row: 1 / 4;
     }
+
+
+
+
+        /*============================================== subsection 2 ============================================== */
+
+
+
+
+
+        /*============================================== subsection 2 ============================================== */
+
+
+
+
+
+        .subsection-feature {
+            background-image: url(../assets/speedSubSectionBG.png);
+            width: 100vw;
+            height: 70vh;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: bottom;
+        }
+        .subsection-feature_container {
+            padding: 6vh 10vw 6vh 10vw;
+            height: 100%;
+            width: 100%;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+        .subsection-card {
+            display: flex;
+            flex-direction: column;
+            gap:30px;
+        }
+        .logo__always-on {
+            display: inline-block;
+            margin-right: auto;
+        }
 }
 
 @media (max-width: 1200px) {
@@ -942,5 +1022,43 @@ body::-webkit-scrollbar-track {
         background-position: 85% 100%;
         grid-column: 25/ 36;
         grid-row: 1 / 4;
+    }
+
+
+
+
+
+        /*============================================== subsection 2 ============================================== */
+
+
+
+
+
+    .subsection-feature {
+        background-image: url(../assets/speedSubSectionBG.png);
+        width: 100vw;
+        height: 70vh;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: bottom;
+    }
+    .subsection-feature_container {
+        padding: 6vh 10vw 6vh 10vw;
+        height: 100%;
+        width: 100%;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    .subsection-card {
+        display: flex;
+        flex-direction: column;
+        gap:30px;
+    }
+    .logo__always-on {
+        display: inline-block;
+        margin-right: auto;
     }
 }
