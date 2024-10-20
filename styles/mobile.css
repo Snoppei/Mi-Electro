@@ -1,0 +1,299 @@
+@media (max-width: 992px) {
+    .header {
+        height: 6vh;
+        display: grid;
+        grid-template-columns: repeat(9, 1fr);
+        gap: 0.7vw;
+    }
+
+    .logo {
+        grid-column: 1;
+        align-self: center;
+        height: 37px;
+        cursor: pointer;
+    }
+
+    .logo_white {
+        display: none;
+    }
+    .logo_orange {
+        display: inline-block;
+    }
+
+    .nav-menu {
+        align-items: center;
+        display: flex;
+        flex-direction: row;
+        gap: 3vw;
+        grid-column: 2 / 8;
+        grid-row: 1;
+    }
+
+    .nav-menu__item {
+        display: none;
+        text-decoration: unset;
+        background-color: rgb(0, 0, 0 / 0);
+        color: #F1F1F1;
+        font-size: 10px;
+    }
+
+    .button-buy {
+        display: none;
+    }
+    
+    .button-menu {
+        display: inline-block;
+        grid-column: 9;
+        border-radius: 65px;
+        background-image: url(../assets/640x960/mobile-menu-button-bg.png);
+        background-position: center;
+        color: #151515;
+        border-color: rgba(0, 0, 0, 0);
+        box-shadow: none;
+        cursor: pointer;
+        height: 54px;
+        width: 54px;
+        align-self: center;
+    }
+
+    h1 {
+        font-family: 'Gilroy', sans-serif;
+        font-size: 75px;
+        font-weight: 600;
+        line-height: 80px;
+        text-align: left;
+    }
+
+    .hero {
+        padding: 2vh 10vw 2vh 10vw;
+        background-image: url(../assets/640x960/hero-section-bg-640x960.png);
+        background-size: cover;
+        box-sizing: border-box;
+    }
+
+    .preview {
+        margin: 15vh 0 15vh 0;
+    }
+
+    .preview-title {
+        font-weight: 600;
+        line-height: 48px;
+        font-size: 40px;
+        margin-bottom: 30px;
+    }
+
+    .preview-title_color {
+        color: #FF4C0D;
+    }
+
+    .preview-description {
+        font-weight: 600;
+        line-height: 24px;
+        font-size: 20px;
+        margin-bottom: 6vh;
+    }
+
+    .preview-description_color {
+        color: #F1F1F1;
+    }
+
+    .switch-btn {
+        display: inline-block;
+        width: 248px;
+        /* ширина переключателя */
+        height: 54px;
+        /* высота переключателя */
+        border-radius: 108px;
+        /* радиус скругления */
+        background: rgba(0, 0, 0, 0);
+        /* цвет фона */
+        border-style: solid;
+        border-width: 3px;
+        border-color: #F1F1F1;
+        z-index: 0;
+        margin: 0;
+        padding: 0;
+        cursor: pointer;
+        position: relative;
+        transition-duration: 300ms;
+        /* анимация */
+        box-sizing: content-box;
+    }
+
+    .switch-btn::after {
+        content: "";
+        height: 54px;
+        /* высота кнопки */
+        width: 118px;
+        /* ширина кнопки */
+        border-radius: 65px;
+        /* радиус кнопки */
+        background: #F1F1F1;
+        /* цвет кнопки */
+        /*top: -1px;  положение кнопки по вертикали относительно основы */
+        left: -1px;
+        /* положение кнопки по горизонтали относительно основы */
+        transition-duration: 300ms;
+        /* анимация */
+        position: absolute;
+        z-index: 1;
+    }
+
+    .switch-on {
+        background: rgb(0, 0, 0 / 0);
+    }
+
+    .switch-on::after {
+        left: 131px;
+        background: #F1F1F1;
+    }
+
+    .switch-btn__content {
+        position: absolute;
+        font-family: Gilroy;
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 24px;
+        text-align: left;
+        z-index: 2;
+        transition-duration: 300ms;
+        transition-timing-function: ease-in-out;
+    }
+
+    .switch-btn__content_first {
+        left: 30px;
+        top: 15px;
+        color: #151515;
+    }
+
+    .switch-btn__content_second {
+        left: 165px;
+        top: 15px;
+        color: #F1F1F1;
+    }
+
+    .switch-on>.switch-btn__content_first {
+        color: #F1F1F1;
+    }
+
+    .switch-on>.switch-btn__content_second {
+        color: #151515;
+    }
+
+    .title {
+        font-family: Gilroy;
+        font-size: 43px;
+        font-weight: 500;
+        line-height: 49.5px;
+        text-align: left;
+        color: #F1F1F1
+    }
+
+    .title_orange {
+        color: #FF4C0D;
+    }
+
+    .features {
+        display: flex;
+        flex-direction: column;
+        gap: 10vh;
+    }
+
+    .features-list {
+        display: flex;
+    }
+
+    .features-list_flex {
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 40px;
+        width: 100%;
+    }
+
+    .features-card {
+        width: 100%;
+        opacity: 100%;
+        cursor: pointer;
+        pointer-events: none;
+    }
+
+    .features-card:hover {
+        display: none;
+    }
+
+    .features-card__line {
+        background-color: #FF4C0D;
+        height: 3px;
+        width: 25%;
+        margin: 15px 0 15px 0;
+    }
+
+    .features-card:hover>.features-card__line {
+        display:none
+    }
+
+    .features-card__title {
+        font-family: Gilroy;
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 24px;
+        text-align: left;
+        color: #FF4C0D;
+    }
+
+    .features-card__text-content {
+        font-family: Gilroy;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 22.4px;
+        letter-spacing: -0.01em;
+        text-align: left;
+        color: #F1F1F1;
+        margin-bottom: 15px;
+    }
+
+    .features-card__image {
+        border-radius: 15px;
+        transform: rotateY(3.142rad);
+        width: 100%;
+        height: 36vh;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .features-card_first > .features-card__image {
+        background-image: url(../assets/speedModes.png);
+    }
+
+    .features-card_second > .features-card__image {
+        background-image: url(../assets/batteryRecoverySystem.png);
+    }
+
+    .features-card_third > .features-card__image {
+        background-image: url(../assets/highCapacityBattery.png);
+    }
+
+    .features-images {
+        display: none;
+    }
+
+    .features-image_current {
+        display: none;
+    }
+
+    .features-image_next {
+        display: none;
+    }
+
+}
+
+@media (max-width: 768px) {
+    /* для мобилок в альбомной ориентации как-нибудь потом */
+    
+}
+
+@media (max-width: 562px) {
+    /* для мобилок в портретной ориентации как-нибудь потом */
+}
+
+/* без адаптации для смарт часов */

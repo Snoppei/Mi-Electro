@@ -5,9 +5,9 @@ $('.switch-btn').click(function () {
 });
 
 const imageUrls = [
-    'assets/speedModes.png',
-    'assets/batteryRecoverySystem.png',
-    'assets/highCapacityBattery.png'
+    './assets/speedModes.png',
+    './assets/batteryRecoverySystem.png',
+    './assets/highCapacityBattery.png'
 ];
 
 $('.features-card_first').click(function () {
