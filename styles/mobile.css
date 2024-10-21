@@ -308,6 +308,7 @@
         flex-direction: column;
         justify-content: space-between;
         align-items: flex-start;
+        background: linear-gradient(90deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 100%);
     }
     .subsection-card {
         display: flex;
@@ -323,14 +324,14 @@
 
 @media (max-width: 768px) {
     /* для мобилок в альбомной ориентации как-нибудь потом */
-    .features-card__image {
+    /* .features-card__image {
         border-radius: 15px;
         transform: rotateY(3.142rad);
         width: 100%;
         height: 100vh;
         background-size: cover;
         background-position: center;
-    }
+    } */
 
 
         /*============================================== subsection 2 ============================================== */
@@ -339,7 +340,7 @@
 
 
 
-        .subsection-feature {
+        /* .subsection-feature {
             background-image: url(../assets/speedSubSectionBG.png);
             width: 100vw;
             height: 65vh;
@@ -368,7 +369,7 @@
             display: inline-block;
             margin-right: auto;
             height: 30px;
-        }
+        } */
 }
 
 @media (max-width: 562px) {
