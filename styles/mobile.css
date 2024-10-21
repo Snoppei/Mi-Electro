@@ -189,7 +189,7 @@
         color: #F1F1F1
     }
 
-    .title_orange {
+    .title_color {
         color: #FF4C0D;
     }
 
@@ -209,30 +209,29 @@
         gap: 40px;
         width: 100%;
     }
-
-    .features-card {
+    .features-point {
         width: 100%;
         opacity: 100%;
         cursor: pointer;
         pointer-events: none;
     }
 
-    .features-card:hover {
+    .features-point:hover {
         display: none;
     }
 
-    .features-card__line {
+    .features-point__line {
         background-color: #FF4C0D;
         height: 3px;
         width: 25%;
         margin: 15px 0 15px 0;
     }
 
-    .features-card:hover>.features-card__line {
+    .features-point:hover>.features-point__line {
         display:none
     }
 
-    .features-card__title {
+    .features-point__title {
         font-family: Gilroy;
         font-size: 20px;
         font-weight: 600;
@@ -241,7 +240,7 @@
         color: #FF4C0D;
     }
 
-    .features-card__text-content {
+    .features-point__text-content {
         font-family: Gilroy;
         font-size: 14px;
         font-weight: 400;
@@ -252,7 +251,7 @@
         margin-bottom: 15px;
     }
 
-    .features-card__image {
+    .features-point__image {
         border-radius: 15px;
         transform: rotateY(3.142rad);
         width: 100%;
@@ -261,15 +260,15 @@
         background-position: center;
     }
 
-    .features-card_first > .features-card__image {
+    .features-point_first > .features-point__image {
         background-image: url(../assets/speedModes.png);
     }
 
-    .features-card_second > .features-card__image {
+    .features-point_second > .features-point__image {
         background-image: url(../assets/batteryRecoverySystem.png);
     }
 
-    .features-card_third > .features-card__image {
+    .features-point_third > .features-point__image {
         background-image: url(../assets/highCapacityBattery.png);
     }
 
@@ -293,7 +292,6 @@
 
     .subsection-feature {
         background-image: url(../assets/speedSubSectionBG.png);
-        width: 100vw;
         height: 70vh;
         background-size: cover;
         background-repeat: no-repeat;
@@ -324,7 +322,7 @@
 
 @media (max-width: 768px) {
     /* для мобилок в альбомной ориентации как-нибудь потом */
-    /* .features-card__image {
+    /* .features-point__image {
         border-radius: 15px;
         transform: rotateY(3.142rad);
         width: 100%;
@@ -563,7 +561,7 @@
         color: #F1F1F1
     }
 
-    .title_orange {
+    .title_color {
         color: #FF4C0D;
     }
 
@@ -584,29 +582,29 @@
         width: 100%;
     }
 
-    .features-card {
+    .features-point {
         width: 100%;
         opacity: 100%;
         cursor: pointer;
         pointer-events: none;
     }
 
-    .features-card:hover {
+    .features-point:hover {
         display: none;
     }
 
-    .features-card__line {
+    .features-point__line {
         background-color: #FF4C0D;
         height: 3px;
         width: 25%;
         margin: 15px 0 15px 0;
     }
 
-    .features-card:hover>.features-card__line {
+    .features-point:hover>.features-point__line {
         display:none
     }
 
-    .features-card__title {
+    .features-point__title {
         font-family: Gilroy;
         font-size: 16px;
         font-weight: 600;
@@ -615,7 +613,7 @@
         color: #FF4C0D;
     }
 
-    .features-card__text-content {
+    .features-point__text-content {
         font-family: Gilroy;
         font-size: 12px;
         font-weight: 400;
@@ -626,7 +624,7 @@
         margin-bottom: 15px;
     }
 
-    .features-card__image {
+    .features-point__image {
         border-radius: 15px;
         transform: rotateY(3.142rad);
         width: 100%;
@@ -635,15 +633,15 @@
         background-position: center;
     }
 
-    .features-card_first > .features-card__image {
+    .features-point_first > .features-point__image {
         background-image: url(../assets/speedModes.png);
     }
 
-    .features-card_second > .features-card__image {
+    .features-point_second > .features-point__image {
         background-image: url(../assets/batteryRecoverySystem.png);
     }
 
-    .features-card_third > .features-card__image {
+    .features-point_third > .features-point__image {
         background-image: url(../assets/highCapacityBattery.png);
     }
 
@@ -667,7 +665,6 @@
 
     .subsection-feature {
         background-image: url(../assets/speedSubSectionBG.png);
-        width: 100vw;
         height: 65vh;
         background-size: cover;
         background-repeat: no-repeat;
