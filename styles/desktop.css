@@ -302,7 +302,7 @@ body::-webkit-scrollbar-track {
 
     .features-point__line {
         background-color: #F1F1F1;
-        height: 0.3vh;
+        height: 2px;
         width: 100%;
         margin: 1vh 0 1vh 0;
     }
@@ -762,7 +762,7 @@ body::-webkit-scrollbar-track {
 
     .features-point__line {
         background-color: #F1F1F1;
-        height: 0.3vh;
+        height: 2px;
         width: 100%;
         margin: 1vh 0 1vh 0;
     }
@@ -1087,7 +1087,7 @@ body::-webkit-scrollbar-track {
 
     .features-point__line {
         background-color: #F1F1F1;
-        height: 0.3vh;
+        height: 2px;
         width: 100%;
         margin: 1vh 0 1vh 0;
     }
