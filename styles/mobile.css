@@ -190,7 +190,7 @@
     }
 
     .title_color {
-        color: #FF4C0D;
+        color: #F1F1F1;
     }
 
     .features {
@@ -317,6 +317,219 @@
         display: inline-block;
         margin-right: auto;
     }
+
+        /*============================================== section 3 ============================================== */
+
+
+
+
+        .section-features {
+            padding: 18vh 10vw 6vh 10vw;
+            background-image: url(../assets/640x960/features-section-bg-640x960.png);
+            background-size: cover;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            gap: 18vh;
+        }
+    
+        .features-card_first {
+            width: 100%;
+            aspect-ratio: 16.1/16.1;
+            position: relative;
+            border-radius: 15px;
+        }
+    
+        .features-card__bg-design {
+            width: 100%;
+            height: 74%;
+            position: relative;
+            background-image: url(../assets/features-card-design-bg.png);
+            background-size: cover;
+            background-position: 10% -50%;
+            background-repeat: no-repeat;
+            z-index: 0;
+            border-radius: 15px;
+    
+        }
+    
+        .feature-box_in-card {
+            width: 100%;
+            height: 50%;
+            position: absolute;
+            box-sizing: border-box;
+            z-index: 1;
+            bottom: 0;
+            background: linear-gradient(0deg, #0E0E0E 50.18%, rgba(14, 14, 14, 0) 88.52%);
+            border-radius: 15px;
+        }
+    
+        .feature-title {
+            font-family: Gilroy;
+            font-size: 20px;
+            font-weight: 600;
+            line-height: 24px;
+            text-align: left;
+            color: #F1F1F1;
+            padding: 15% 5vw 10px 5vw;
+            margin-top: 5vh;
+        }
+    
+        .feature-content {
+            font-family: Gilroy;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 21px;
+            letter-spacing: -0.01em;
+            text-align: left;
+            padding: 0 5vw 15% 5vw;
+            color: #F1F1F1;
+        }
+    
+        .features-card_second {
+            width: 100%;
+            background-image: url(../assets/scooterScreen.png);
+            background-size: cover;
+            background-position: top;
+            aspect-ratio: 16.1/16.1;
+            position: relative;
+            border-radius: 15px;
+        }
+    
+        .feature-box_in-card__no-gradient {
+            background: linear-gradient(0deg, #0E0E0E 10.18%, rgba(14, 14, 14, 0) 88.52%);
+        }
+    
+        .feature-box__gradient-layer {
+            background: linear-gradient(180deg, #0E0E0E 20.18%, rgba(14, 14, 14, 0) 88.52%);
+            width: 100%;
+            height: 50%;
+            border-radius: 15px;
+        }
+    
+        .flex-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            gap: 12vh;
+            box-sizing: border-box;
+            height: 100%;
+        }
+    
+    
+        .safety {
+            display: flex;
+            flex-direction: column;
+            gap: 10vh;
+        }
+    
+        .safety-image_current {
+            border-radius: 15px;
+            background-image: url(../assets/safety-first.png);
+            transition-property: background-image, opacity;
+            transition-duration: 300ms;
+            transition-timing-function: ease;
+            transform: rotateY(3.142rad);
+            width: 100%;
+            background-size: cover;
+            background-position: right;
+            grid-column: 1 / 24;
+            grid-row: 1 / 5;
+    
+        }
+    
+        .safety-image_next {
+            border-radius: 15px;
+            background-image: url(../assets/safety-second.png);
+            transition-property: background-image, opacity;
+            transition-duration: 300ms;
+            transition-timing-function: ease;
+            transform: rotateY(3.142rad);
+            width: 100%;
+            background-size: cover;
+            background-position: center;
+            grid-column: 25/ 36;
+            grid-row: 1 / 4;
+        }
+
+        .safety-point_first > .safety__image {
+            background-image: url(../assets/safety-first.png);
+        }
+        .safety-point_second > .safety__image {
+            background-image: url(../assets/safety-second.png);
+        }
+        .safety-point_third > .safety__image {
+            background-image: url(../assets/safety-third.png);
+        }
+        .safety-point_fourth > .safety__image {
+            background-image: url(../assets/safety-fourth.png);
+        }
+    
+        .mobile-app {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            gap: 2vw;
+        }
+    
+        .mobile-app__badges {
+            display: flex;
+            flex-direction: row;
+            gap: 1.5vw;
+        }
+    
+        .badge__app-store {
+            cursor: pointer;
+            width: 8.3vw;
+        }
+    
+        .badge__google-play {
+            cursor: pointer;
+            width: 9.4vw;
+        }
+    
+        .subsection-card__mobile-app {
+            width: 50%;
+            height: 100%;
+            gap: 3vh;
+            align-self: center;
+        }
+    
+        .subsection-card__mobile-app>.features-point__text-content {
+            width: 59%;
+        }
+    
+        .phone-preview {
+            align-self: center;
+            display: inline-block;
+            position: relative;
+            width: 50%;
+            max-height: 100%;
+            box-sizing: border-box;
+            overflow: hidden;
+        }
+    
+        .phone {
+            object-fit: contain;
+            width: 100%;
+            height: 100%;
+            object-position: top;
+        }
+    
+        .section-features_no-padding-bottom {
+            padding-bottom: 0;
+        }
+
+        .safety-list_flex {
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+        }
+
+        .mobile-title-color {
+            color: #FF4C0D;
+        }
 
 }
 
@@ -692,4 +905,8 @@
         margin-right: auto;
         height: 30px;
     }
+
+
+    
+    
 }
