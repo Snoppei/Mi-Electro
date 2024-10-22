@@ -98,6 +98,7 @@ body::-webkit-scrollbar-track {
     .logo_orange {
         display: none;
     }
+
     .logo_white {
         display: inline-block;
     }
@@ -369,7 +370,7 @@ body::-webkit-scrollbar-track {
 
 
 
-        /*============================================== subsection 2 ============================================== */
+    /*============================================== subsection 2 ============================================== */
 
 
 
@@ -382,6 +383,7 @@ body::-webkit-scrollbar-track {
         background-repeat: no-repeat;
         background-position: bottom;
     }
+
     .subsection-feature_container {
         padding: 6vh 10vw 6vh 10vw;
         height: 100%;
@@ -392,16 +394,18 @@ body::-webkit-scrollbar-track {
         justify-content: space-between;
         align-items: flex-start;
     }
+
     .subsection-card {
         display: flex;
         flex-direction: column;
-        gap:30px;
+        gap: 30px;
     }
+
     .logo__always-on {
         display: inline-block;
         margin-right: auto;
     }
-    
+
 
 
     /*============================================== section 3 ============================================== */
@@ -423,6 +427,7 @@ body::-webkit-scrollbar-track {
         position: relative;
         border-radius: 15px;
     }
+
     .features-card__bg-design {
         width: 100%;
         height: 74%;
@@ -454,7 +459,7 @@ body::-webkit-scrollbar-track {
         line-height: 24px;
         text-align: left;
         color: #F1F1F1;
-        padding: 20% 5vh 15px 5vh;
+        padding: 20% 3vw 15px 3vw;
     }
 
     .feature-content {
@@ -464,7 +469,7 @@ body::-webkit-scrollbar-track {
         line-height: 21px;
         letter-spacing: -0.01em;
         text-align: left;
-        padding: 0 5vh 10px 5vh;
+        padding: 0 3vw 10px 3vw;
         color: #F1F1F1;
     }
 
@@ -481,9 +486,10 @@ body::-webkit-scrollbar-track {
     .feature-box_in-card__no-gradient {
         background: linear-gradient(0deg, #0E0E0E 10.18%, rgba(14, 14, 14, 0) 88.52%);
     }
+
     .feature-box__gradient-layer {
         background: linear-gradient(180deg, #0E0E0E 20.18%, rgba(14, 14, 14, 0) 88.52%);
-        width:100%;
+        width: 100%;
         height: 50%;
         border-radius: 15px;
     }
@@ -550,11 +556,12 @@ body::-webkit-scrollbar-track {
         cursor: pointer;
         width: 8.3vw;
     }
+
     .badge__google-play {
         cursor: pointer;
         width: 9.4vw;
     }
-    
+
     .subsection-card__mobile-app {
         width: 50%;
         height: 100%;
@@ -562,9 +569,10 @@ body::-webkit-scrollbar-track {
         align-self: center;
     }
 
-    .subsection-card__mobile-app > .features-point__text-content {
+    .subsection-card__mobile-app>.features-point__text-content {
         width: 59%;
     }
+
     .phone-preview {
         display: inline-block;
         position: relative;
@@ -573,6 +581,7 @@ body::-webkit-scrollbar-track {
         box-sizing: border-box;
         overflow: hidden;
     }
+
     .phone {
         object-fit: cover;
         width: 70%;
@@ -583,7 +592,7 @@ body::-webkit-scrollbar-track {
     .section-features_no-padding-bottom {
         padding-bottom: 0;
     }
-    
+
 
 
 }
@@ -607,6 +616,7 @@ body::-webkit-scrollbar-track {
     .logo_orange {
         display: none;
     }
+
     .logo_white {
         display: inline-block;
     }
@@ -800,7 +810,7 @@ body::-webkit-scrollbar-track {
     }
 
     .features-point {
-        width: 25vw;
+        width: 33vw;
         opacity: 40%;
         cursor: pointer;
     }
@@ -837,6 +847,7 @@ body::-webkit-scrollbar-track {
         font-weight: 400;
         line-height: 21px;
         letter-spacing: -0.01em;
+        padding: 0 10px 0 0;
         text-align: left;
         color: #F1F1F1;
     }
@@ -881,41 +892,230 @@ body::-webkit-scrollbar-track {
 
 
 
-        /*============================================== subsection 2 ============================================== */
+    /*============================================== subsection 2 ============================================== */
 
 
 
 
 
-        .subsection-feature {
-            background-image: url(../assets/speedSubSectionBG.png);
-            height: 70vh;
-            background-size: cover;
-            background-repeat: no-repeat;
-            background-position: bottom;
-        }
-        .subsection-feature_container {
-            padding: 6vh 10vw 6vh 10vw;
-            height: 100%;
-            width: 100%;
-            box-sizing: border-box;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            align-items: flex-start;
-        }
-        .subsection-card {
-            display: flex;
-            flex-direction: column;
-            gap:30px;
-        }
-        .logo__always-on {
-            display: inline-block;
-            margin-right: auto;
-        }
+    .subsection-feature {
+        background-image: url(../assets/speedSubSectionBG.png);
+        height: 70vh;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: bottom;
+    }
+
+    .subsection-feature_container {
+        padding: 6vh 10vw 6vh 10vw;
+        height: 100%;
+        width: 100%;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    .subsection-card {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .logo__always-on {
+        display: inline-block;
+        margin-right: auto;
+    }
+
+    /*============================================== section 3 ============================================== */
+
+    .section-features {
+        padding: 18vh 10vw 6vh 10vw;
+        background-image: url(../assets/features-section-bg.png);
+        background-size: cover;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 18vh;
+    }
+
+    .features-card_first {
+        width: 48%;
+        aspect-ratio: 16.1/15.8;
+        position: relative;
+        border-radius: 15px;
+    }
+
+    .features-card__bg-design {
+        width: 100%;
+        height: 74%;
+        position: relative;
+        background-image: url(../assets/features-card-design-bg.png);
+        background-size: cover;
+        background-position: 10% -50%;
+        background-repeat: no-repeat;
+        z-index: 0;
+        border-radius: 15px;
+
+    }
+
+    .feature-box_in-card {
+        width: 100%;
+        height: 50%;
+        position: absolute;
+        box-sizing: border-box;
+        z-index: 1;
+        bottom: 0;
+        background: linear-gradient(0deg, #0E0E0E 50.18%, rgba(14, 14, 14, 0) 88.52%);
+        border-radius: 15px;
+    }
+
+    .feature-title {
+        font-family: Gilroy;
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 24px;
+        text-align: left;
+        color: #F1F1F1;
+        padding: 20% 5vh 15px 5vh;
+    }
+
+    .feature-content {
+        font-family: Gilroy;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 21px;
+        letter-spacing: -0.01em;
+        text-align: left;
+        padding: 0 5vh 10px 5vh;
+        color: #F1F1F1;
+    }
+
+    .features-card_second {
+        width: 48%;
+        background-image: url(../assets/scooterScreen.png);
+        background-size: cover;
+        background-position: top;
+        aspect-ratio: 16.1/15.8;
+        position: relative;
+        border-radius: 15px;
+    }
+
+    .feature-box_in-card__no-gradient {
+        background: linear-gradient(0deg, #0E0E0E 10.18%, rgba(14, 14, 14, 0) 88.52%);
+    }
+
+    .feature-box__gradient-layer {
+        background: linear-gradient(180deg, #0E0E0E 20.18%, rgba(14, 14, 14, 0) 88.52%);
+        width: 100%;
+        height: 50%;
+        border-radius: 15px;
+    }
+
+    .flex-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 12vh;
+        box-sizing: border-box;
+        height: 100%;
+    }
+
+
+    .safety {
+        display: flex;
+        flex-direction: column;
+        gap: 10vh;
+    }
+
+    .safety-image_current {
+        border-radius: 15px;
+        background-image: url(../assets/safety-first.png);
+        transition-property: background-image, opacity;
+        transition-duration: 300ms;
+        transition-timing-function: ease;
+        transform: rotateY(3.142rad);
+        width: 100%;
+        background-size: cover;
+        background-position: right;
+        grid-column: 1 / 24;
+        grid-row: 1 / 5;
+
+    }
+
+    .safety-image_next {
+        border-radius: 15px;
+        background-image: url(../assets/safety-second.png);
+        transition-property: background-image, opacity;
+        transition-duration: 300ms;
+        transition-timing-function: ease;
+        transform: rotateY(3.142rad);
+        width: 100%;
+        background-size: cover;
+        background-position: center;
+        grid-column: 25/ 36;
+        grid-row: 1 / 4;
+    }
+
+    .mobile-app {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 2vw;
+    }
+
+    .mobile-app__badges {
+        display: flex;
+        flex-direction: row;
+        gap: 1.5vw;
+    }
+
+    .badge__app-store {
+        cursor: pointer;
+        width: 8.3vw;
+    }
+
+    .badge__google-play {
+        cursor: pointer;
+        width: 9.4vw;
+    }
+
+    .subsection-card__mobile-app {
+        width: 50%;
+        height: 100%;
+        gap: 6vh;
+        align-self: center;
+    }
+
+    .subsection-card__mobile-app>.features-point__text-content {
+        width: 59%;
+    }
+
+    .phone-preview {
+        display: inline-block;
+        position: relative;
+        width: 50%;
+        max-height: 70vh;
+        box-sizing: border-box;
+        overflow: hidden;
+    }
+
+    .phone {
+        object-fit: cover;
+        width: 70%;
+        height: 100%;
+        object-position: top;
+    }
+
+    .section-features_no-padding-bottom {
+        padding-bottom: 0;
+    }
 }
 
 @media (max-width: 1200px) {
+
     /* для экранов до 1200 px*/
     .header {
         height: 8vh;
@@ -933,6 +1133,7 @@ body::-webkit-scrollbar-track {
     .logo_orange {
         display: none;
     }
+
     .logo_white {
         display: inline-block;
     }
@@ -1125,7 +1326,7 @@ body::-webkit-scrollbar-track {
     }
 
     .features-point {
-        width: 25vw;
+        width: 33vw;
         opacity: 40%;
         cursor: pointer;
     }
@@ -1162,6 +1363,7 @@ body::-webkit-scrollbar-track {
         font-weight: 400;
         line-height: 21px;
         letter-spacing: -0.01em;
+        padding: 0 10px 0 0;
         text-align: left;
         color: #F1F1F1;
     }
@@ -1206,7 +1408,7 @@ body::-webkit-scrollbar-track {
 
 
 
-        /*============================================== subsection 2 ============================================== */
+    /*============================================== subsection 2 ============================================== */
 
 
 
@@ -1219,6 +1421,7 @@ body::-webkit-scrollbar-track {
         background-repeat: no-repeat;
         background-position: bottom;
     }
+
     .subsection-feature_container {
         padding: 6vh 10vw 6vh 10vw;
         height: 100%;
@@ -1229,13 +1432,207 @@ body::-webkit-scrollbar-track {
         justify-content: space-between;
         align-items: flex-start;
     }
+
     .subsection-card {
         display: flex;
         flex-direction: column;
-        gap:30px;
+        gap: 30px;
     }
+
     .logo__always-on {
         display: inline-block;
         margin-right: auto;
+    }
+
+
+
+
+
+    /*============================================== section 3 ============================================== */
+
+
+
+
+    .section-features {
+        padding: 18vh 10vw 6vh 10vw;
+        background-image: url(../assets/features-section-bg.png);
+        background-size: cover;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 18vh;
+    }
+
+    .features-card_first {
+        width: 48%;
+        aspect-ratio: 16.1/16.1;
+        position: relative;
+        border-radius: 15px;
+    }
+
+    .features-card__bg-design {
+        width: 100%;
+        height: 74%;
+        position: relative;
+        background-image: url(../assets/features-card-design-bg.png);
+        background-size: cover;
+        background-position: 10% -50%;
+        background-repeat: no-repeat;
+        z-index: 0;
+        border-radius: 15px;
+
+    }
+
+    .feature-box_in-card {
+        width: 100%;
+        height: 50%;
+        position: absolute;
+        box-sizing: border-box;
+        z-index: 1;
+        bottom: 0;
+        background: linear-gradient(0deg, #0E0E0E 50.18%, rgba(14, 14, 14, 0) 88.52%);
+        border-radius: 15px;
+    }
+
+    .feature-title {
+        font-family: Gilroy;
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 24px;
+        text-align: left;
+        color: #F1F1F1;
+        padding: 15% 1vw 10px 1vw;
+    }
+
+    .feature-content {
+        font-family: Gilroy;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 21px;
+        letter-spacing: -0.01em;
+        text-align: left;
+        padding: 0 1vw 15% 1vw;
+        color: #F1F1F1;
+    }
+
+    .features-card_second {
+        width: 48%;
+        background-image: url(../assets/scooterScreen.png);
+        background-size: cover;
+        background-position: top;
+        aspect-ratio: 16.1/16.1;
+        position: relative;
+        border-radius: 15px;
+    }
+
+    .feature-box_in-card__no-gradient {
+        background: linear-gradient(0deg, #0E0E0E 10.18%, rgba(14, 14, 14, 0) 88.52%);
+    }
+
+    .feature-box__gradient-layer {
+        background: linear-gradient(180deg, #0E0E0E 20.18%, rgba(14, 14, 14, 0) 88.52%);
+        width: 100%;
+        height: 50%;
+        border-radius: 15px;
+    }
+
+    .flex-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 12vh;
+        box-sizing: border-box;
+        height: 100%;
+    }
+
+
+    .safety {
+        display: flex;
+        flex-direction: column;
+        gap: 10vh;
+    }
+
+    .safety-image_current {
+        border-radius: 15px;
+        background-image: url(../assets/safety-first.png);
+        transition-property: background-image, opacity;
+        transition-duration: 300ms;
+        transition-timing-function: ease;
+        transform: rotateY(3.142rad);
+        width: 100%;
+        background-size: cover;
+        background-position: right;
+        grid-column: 1 / 24;
+        grid-row: 1 / 5;
+
+    }
+
+    .safety-image_next {
+        border-radius: 15px;
+        background-image: url(../assets/safety-second.png);
+        transition-property: background-image, opacity;
+        transition-duration: 300ms;
+        transition-timing-function: ease;
+        transform: rotateY(3.142rad);
+        width: 100%;
+        background-size: cover;
+        background-position: center;
+        grid-column: 25/ 36;
+        grid-row: 1 / 4;
+    }
+
+    .mobile-app {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 2vw;
+    }
+
+    .mobile-app__badges {
+        display: flex;
+        flex-direction: row;
+        gap: 1.5vw;
+    }
+
+    .badge__app-store {
+        cursor: pointer;
+        width: 8.3vw;
+    }
+
+    .badge__google-play {
+        cursor: pointer;
+        width: 9.4vw;
+    }
+
+    .subsection-card__mobile-app {
+        width: 50%;
+        height: 100%;
+        gap: 6vh;
+        align-self: center;
+    }
+
+    .subsection-card__mobile-app>.features-point__text-content {
+        width: 59%;
+    }
+
+    .phone-preview {
+        display: inline-block;
+        position: relative;
+        width: 50%;
+        max-height: 70vh;
+        box-sizing: border-box;
+        overflow: hidden;
+    }
+
+    .phone {
+        object-fit: cover;
+        width: 70%;
+        height: 100%;
+        object-position: top;
+    }
+
+    .section-features_no-padding-bottom {
+        padding-bottom: 0;
     }
 }
