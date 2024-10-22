@@ -592,7 +592,9 @@ body::-webkit-scrollbar-track {
     .section-features_no-padding-bottom {
         padding-bottom: 0;
     }
-
+    .mobile-title-color {
+        color: #FF4C0D;
+    }
 
 
 }
@@ -1111,6 +1113,10 @@ body::-webkit-scrollbar-track {
 
     .section-features_no-padding-bottom {
         padding-bottom: 0;
+    }
+
+    .mobile-title-color {
+        color: #FF4C0D;
     }
 }
 
@@ -1634,5 +1640,9 @@ body::-webkit-scrollbar-track {
 
     .section-features_no-padding-bottom {
         padding-bottom: 0;
+    }
+
+    .mobile-title-color {
+        color: #FF4C0D;
     }
 }
