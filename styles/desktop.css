@@ -532,6 +532,57 @@ body::-webkit-scrollbar-track {
         grid-column: 25/ 36;
         grid-row: 1 / 4;
     }
+
+    .mobile-app {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 2vw;
+    }
+
+    .mobile-app__badges {
+        display: flex;
+        flex-direction: row;
+        gap: 1.5vw;
+    }
+
+    .badge__app-store {
+        cursor: pointer;
+        width: 8.3vw;
+    }
+    .badge__google-play {
+        cursor: pointer;
+        width: 9.4vw;
+    }
+    
+    .subsection-card__mobile-app {
+        width: 50%;
+        height: 100%;
+        gap: 6vh;
+        align-self: center;
+    }
+
+    .subsection-card__mobile-app > .features-point__text-content {
+        width: 59%;
+    }
+    .phone-preview {
+        display: inline-block;
+        position: relative;
+        width: 50%;
+        max-height: 70vh;
+        box-sizing: border-box;
+        overflow: hidden;
+    }
+    .phone {
+        object-fit: cover;
+        width: 70%;
+        height: 100%;
+        object-position: top;
+    }
+
+    .section-features_no-padding-bottom {
+        padding-bottom: 0;
+    }
     
 
 
