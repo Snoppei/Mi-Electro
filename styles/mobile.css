@@ -880,7 +880,7 @@
 
     .section-features {
         padding: 10vh 10vw 6vh 10vw;
-        background-image: url(../assets/640x960/features-section-bg-640x960.png);
+        background-image: url(../assets/320x480/features-section-bg-320x480.png);
         background-size: cover;
         box-sizing: border-box;
         display: flex;
