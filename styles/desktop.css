@@ -79,6 +79,7 @@ body::-webkit-scrollbar-track {
     opacity: 0.5;
 }
 
+
 @media (min-width: 1300px) {
 
     /* для desktop экранов более 1300 px */
@@ -595,7 +596,9 @@ body::-webkit-scrollbar-track {
     .mobile-title-color {
         color: #FF4C0D;
     }
-
+    .feature-box_outside-card {
+        display: none;
+    }
 
 }
 
@@ -1117,6 +1120,10 @@ body::-webkit-scrollbar-track {
 
     .mobile-title-color {
         color: #FF4C0D;
+    }
+
+    .feature-box_outside-card {
+        display: none;
     }
 }
 
@@ -1644,5 +1651,9 @@ body::-webkit-scrollbar-track {
 
     .mobile-title-color {
         color: #FF4C0D;
+    }
+
+    .feature-box_outside-card {
+        display: none;
     }
 }
