@@ -122,6 +122,17 @@ function smootlyChangeFeaturesCardsBG(imgUrlToChangeCurrent, imgUrlToChangeNext,
         }, 500);
     }
 }
+$(function() {
+    $('.single-item').slick({
+        infinite: true,
+        dots: true,
+        vertical: true,
+        verticalSwiping: true,
+        arrows: false,
+        draggable: false
+    });
+})
+
 
 
 // function repositionBG(current, next, imgUrlToChangeCurrent, section) {
