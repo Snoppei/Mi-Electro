@@ -129,7 +129,7 @@ $(function() {
         vertical: true,
         verticalSwiping: true,
         arrows: false,
-        draggable: false
+        draggable: true
     });
 })
 
