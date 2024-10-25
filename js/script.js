@@ -43,15 +43,6 @@ const classesAndUrls = [
     ]
 ]
 
-// const imageUrls = [
-//     './assets/speedModes.png',
-//     './assets/batteryRecoverySystem.png',
-//     './assets/highCapacityBattery.png',
-//     './assets/safety-first.png',
-//     './assets/safety-second.png',
-//     './assets/safety-third.png',
-//     './assets/safety-fourth.png'
-// ];
 $(document).ready(function () {
 
     let firstItemInSwitch = document.querySelector('.switch-btn__content_first');
@@ -132,31 +123,3 @@ $(function() {
         draggable: true
     });
 })
-
-
-
-// function repositionBG(current, next, imgUrlToChangeCurrent, section) {
-//     if (section == 'safety') {
-//         switch (imgUrlToChangeCurrent) {
-//             case './assets/safety-first.png':
-//                 next.css('background-position', 'center');
-//                 current.css('background-position', 'right');
-//                 break;
-//             case './assets/safety-second':
-//                 next.css('background-position', 'center');
-//                 current.css('background-position', 'center');
-//                 break;
-//             case './assets/safety-third':
-//                 next.css('background-position', 'center');
-//                 current.css('background-position', 'right');
-//                 break;
-//             case './assets/safety-fourth':
-//                 next.css('background-position', 'right');
-//                 current.css('background-position', 'center');
-//                 break;
-
-//         }
-//     } else {
-//         return 0;
-//     }
-// }

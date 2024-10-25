@@ -641,6 +641,16 @@ body::-webkit-scrollbar-track {
     color: #151515;
     width: 60%;
   }
+
+  .slick-slide .slider__logo_orange {
+    display: inline-block;
+  }
+  .slick-slide .slider__logo_white {
+    display: none;
+  }
+  .title_in-slider {
+    color: #ff4c0d;
+  }
 }
 
 @media (max-width: 1300px) {
@@ -1165,6 +1175,60 @@ body::-webkit-scrollbar-track {
   .feature-box_outside-card {
     display: none;
   }
+
+  /*      SLIDER             ================================================================================                                            */
+
+  .slide_first {
+    width: 100vw;
+    height: 70vh;
+  }
+  .slide_second {
+    content: "placeholder";
+    width: 100vw;
+    height: 70vh;
+    background-color: gray;
+  }
+  .slide_third {
+    content: "placeholder";
+    width: 100vw;
+    height: 70vh;
+    background-color: gray;
+  }
+  .about-xiaomi {
+    background-image: url(../assets/about-xiaomi.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100vw;
+    height: 70vh;
+  }
+  .placeholder {
+    background-image: url(../assets/placeholder-1024x1024.png);
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    height: 70vh;
+  }
+
+  .gradient-wrap {
+    background: rgba(232, 181, 119, 0.25);
+    height: 100%;
+    width: 100%;
+  }
+
+  .text-content__black {
+    color: #151515;
+    width: 60%;
+  }
+
+  .slick-slide .slider__logo_orange {
+    display: inline-block;
+  }
+  .slick-slide .slider__logo_white {
+    display: none;
+  }
+  .title_in-slider {
+    color: #ff4c0d;
+  }
 }
 
 @media (max-width: 1200px) {
@@ -1688,5 +1752,59 @@ body::-webkit-scrollbar-track {
 
   .feature-box_outside-card {
     display: none;
+  }
+
+  /*      SLIDER             ================================================================================                                            */
+
+  .slide_first {
+    width: 100vw;
+    height: 70vh;
+  }
+  .slide_second {
+    content: "placeholder";
+    width: 100vw;
+    height: 70vh;
+    background-color: gray;
+  }
+  .slide_third {
+    content: "placeholder";
+    width: 100vw;
+    height: 70vh;
+    background-color: gray;
+  }
+  .about-xiaomi {
+    background-image: url(../assets/about-xiaomi.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100vw;
+    height: 70vh;
+  }
+  .placeholder {
+    background-image: url(../assets/placeholder-1024x1024.png);
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    height: 70vh;
+  }
+
+  .gradient-wrap {
+    background: rgba(232, 181, 119, 0.25);
+    height: 100%;
+    width: 100%;
+  }
+
+  .text-content__black {
+    color: #151515;
+    width: 60%;
+  }
+
+  .slick-slide .slider__logo_orange {
+    display: inline-block;
+  }
+  .slick-slide .slider__logo_white {
+    display: none;
+  }
+  .title_in-slider {
+    color: #ff4c0d;
   }
 }
