@@ -122,4 +122,33 @@ $(function() {
         arrows: false,
         draggable: true
     });
+});
+
+$(function() {
+  $('.multiple-item').slick({
+    infinite: false,
+    dots: false,
+    vertical: false,
+    verticalSwiping: false,
+    arrows: false,
+    draggable: false,
+    slidesToShow: 2.7,
+    slidesToScroll: 1,
+    centerMode: true,
+    centerPadding: '0px',
+    initialSlide: 1
+  });
+});
+
+
+$('.prev').click(function () {
+  if($('.multiple-item').slick('slickCurrentSlide') > 1) {
+    $('.multiple-item').slick('slickPrev');
+  } else {
+    return;
+  }
+})
+
+$('.next').click(function() {
+  $('.multiple-item').slick('slickNext');
 })

@@ -651,6 +651,104 @@ body::-webkit-scrollbar-track {
   .title_in-slider {
     color: #ff4c0d;
   }
+
+
+  /*      feedback section             ================================================================================                                            */
+  .feedback {
+    width: 100%;
+    overflow: hidden;
+    background-image: url(../assets/feedback-bg.png);
+    background-size: cover;
+  }
+
+  .feedback__title {
+    width: 100%;
+    padding: 6vh 10vw 4vh 10vw;
+  }
+
+  .review {
+    margin: 0 10vw 0 10vw;
+    width: 32vw;
+    aspect-ratio: 1.7/1.2;
+    box-sizing: border-box;
+
+    background-color: #151515;
+    border-radius: 15px;
+  }
+  .slider-menu {
+    padding: 5vh 10vw 5vh 10vw;
+    display: flex;
+    justify-content: space-between;
+  }
+  .slider-nav__buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 15px
+  }
+
+  .review_make {
+    border-radius: 65px;
+    background-color: #f1f1f1;
+    color: #151515;
+    border-color: rgba(0, 0, 0, 0);
+    box-shadow: none;
+    cursor: pointer;
+    height: 54px;
+    width: 190px;
+    align-self: center;
+    font-weight: 700;
+    font-size: 16px;
+  }
+  .prev {
+    width: 54px;
+    aspect-ratio: 1/1;
+    background-image: url(../assets/next-button.svg);
+    rotate: 180deg;
+    border-radius: 54px;
+    background-position: center;
+    border: none;
+    cursor: pointer;
+  }
+  .next {
+    width: 54px;
+    aspect-ratio: 1/1;
+    background-image: url(../assets/next-button.svg);
+    border-radius: 54px;
+    background-position: center;
+    border: none;
+    cursor: pointer;
+  }
+
+  .review-point {
+    padding: 40px 20px 40px 20px;
+  }
+
+  .review-point__title {
+    font-family: Gilroy;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 24px;
+    text-align: left;
+    color: #f1f1f1;
+  }
+
+  .review-point__line {
+    background-color: #ff4c0d;
+    height: 3px;
+    width: 25%;
+    margin: 15px 0 15px 0;
+  }
+
+  .review-point__text-content {
+    font-family: Gilroy;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: -0.01em;
+    text-align: left;
+    color: #f1f1f1;
+    padding: 0 10px 0 0;
+  }
 }
 
 @media (max-width: 1300px) {
