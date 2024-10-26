@@ -794,6 +794,54 @@ body::-webkit-scrollbar-track {
     font-size: 16px;
   }
 
+  .container-card {
+    padding: 6vh 10vw 6vh 10vw;
+    position: relative;
+  }
+
+  .buy-card {
+    background-image: url(../assets/buy-card-bg.svg);
+    width: 100%;
+    aspect-ratio: 2.11/1;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-sizing: border-box;
+    padding: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .preview-description.card__price {
+    color: #ff4c0d;
+  }
+
+  .button-buy_orange {
+    background-color: #ff4c0d;
+    color: #f1f1f1;
+    width: 130px;
+  }
+
+  .buy-card__input {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+  }
+
+  .container_in-card {
+    display: flex;
+    flex-direction: column;
+    height: 50%;
+    gap: 10%;
+  }
+
+  .scooter-in-card {
+    position: absolute;
+    height: 110%;
+    left: 30%;
+    bottom: 5%;
+  }
 }
 
 @media (max-width: 1300px) {
