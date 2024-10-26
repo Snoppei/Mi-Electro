@@ -703,7 +703,7 @@ body::-webkit-scrollbar-track {
     width: 54px;
     aspect-ratio: 1/1;
     background-image: url(../assets/next-button.svg);
-    rotate: 180deg;
+    transform: rotate(180deg);
     border-radius: 54px;
     background-position: center;
     border: none;
