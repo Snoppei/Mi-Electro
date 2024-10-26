@@ -1266,10 +1266,6 @@ body::-webkit-scrollbar-track {
     padding-bottom: 0;
   }
 
-  .mobile-title-color {
-    color: #ff4c0d;
-  }
-
   .feature-box_outside-card {
     display: none;
   }
