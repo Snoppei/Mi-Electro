@@ -652,7 +652,6 @@ body::-webkit-scrollbar-track {
     color: #ff4c0d;
   }
 
-
   /*      feedback section             ================================================================================                                            */
   .feedback {
     width: 100%;
@@ -683,7 +682,7 @@ body::-webkit-scrollbar-track {
   .slider-nav__buttons {
     display: flex;
     flex-direction: row;
-    gap: 15px
+    gap: 15px;
   }
 
   .review_make {
@@ -752,7 +751,6 @@ body::-webkit-scrollbar-track {
 
   /* feedback info section ================================== */
 
-
   .feedback-info {
     padding: 6vh 10vw 6vh 10vw;
   }
@@ -803,6 +801,7 @@ body::-webkit-scrollbar-track {
     background-image: url(../assets/buy-card-bg.svg);
     width: 100%;
     aspect-ratio: 2.11/1;
+    border-radius: 20px;
     background-repeat: no-repeat;
     background-size: cover;
     box-sizing: border-box;
@@ -841,6 +840,7 @@ body::-webkit-scrollbar-track {
     height: 110%;
     left: 30%;
     bottom: 5%;
+    z-index: 3;
   }
 }
 
@@ -1420,6 +1420,197 @@ body::-webkit-scrollbar-track {
   .title_in-slider {
     color: #ff4c0d;
   }
+
+  /*      feedback section             ================================================================================                                            */
+  .feedback {
+    width: 100%;
+    overflow: hidden;
+    background-image: url(../assets/feedback-bg.png);
+    background-size: cover;
+  }
+
+  .feedback__title {
+    width: 100%;
+    padding: 6vh 10vw 4vh 10vw;
+  }
+
+  .review {
+    margin: 0 10vw 0 10vw;
+    width: 32vw;
+    aspect-ratio: 1.7/1.2;
+    box-sizing: border-box;
+
+    background-color: #151515;
+    border-radius: 15px;
+  }
+  .slider-menu {
+    padding: 5vh 10vw 5vh 10vw;
+    display: flex;
+    justify-content: space-between;
+  }
+  .slider-nav__buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+  }
+
+  .review_make {
+    border-radius: 65px;
+    background-color: #f1f1f1;
+    color: #151515;
+    border-color: rgba(0, 0, 0, 0);
+    box-shadow: none;
+    cursor: pointer;
+    height: 54px;
+    width: 190px;
+    align-self: center;
+    font-weight: 700;
+    font-size: 16px;
+  }
+  .prev {
+    width: 54px;
+    aspect-ratio: 1/1;
+    background-image: url(../assets/next-button.svg);
+    transform: rotate(180deg);
+    border-radius: 54px;
+    background-position: center;
+    border: none;
+    cursor: pointer;
+  }
+  .next {
+    width: 54px;
+    aspect-ratio: 1/1;
+    background-image: url(../assets/next-button.svg);
+    border-radius: 54px;
+    background-position: center;
+    border: none;
+    cursor: pointer;
+  }
+
+  .review-point {
+    padding: 40px 20px 40px 20px;
+  }
+
+  .review-point__title {
+    font-family: Gilroy;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 24px;
+    text-align: left;
+    color: #f1f1f1;
+  }
+
+  .review-point__line {
+    background-color: #ff4c0d;
+    height: 3px;
+    width: 25%;
+    margin: 15px 0 15px 0;
+  }
+
+  .review-point__text-content {
+    font-family: Gilroy;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: -0.01em;
+    text-align: left;
+    color: #f1f1f1;
+    padding: 0 10px 0 0;
+  }
+
+  /* feedback info section ================================== */
+
+  .feedback-info {
+    padding: 6vh 10vw 6vh 10vw;
+  }
+
+  .feedback__questions {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .questions__ask {
+    width: 40%;
+    padding: 40px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 6vh;
+  }
+  .questions__popular {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .questions__ask > .features-point__text-content {
+    width: 70%;
+  }
+
+  .button_ask {
+    border-radius: 65px;
+    background-color: #f1f1f1;
+    color: #151515;
+    border-color: rgba(0, 0, 0, 0);
+    box-shadow: none;
+    cursor: pointer;
+    height: 54px;
+    width: 190px;
+    align-self: start;
+    font-weight: 700;
+    font-size: 16px;
+  }
+
+  .container-card {
+    padding: 6vh 10vw 6vh 10vw;
+    position: relative;
+  }
+
+  .buy-card {
+    background-image: url(../assets/buy-card-bg.svg);
+    width: 100%;
+    aspect-ratio: 2.11/1;
+    border-radius: 20px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-sizing: border-box;
+    padding: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .preview-description.card__price {
+    color: #ff4c0d;
+  }
+
+  .button-buy_orange {
+    background-color: #ff4c0d;
+    color: #f1f1f1;
+    width: 130px;
+  }
+
+  .buy-card__input {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+  }
+
+  .container_in-card {
+    display: flex;
+    flex-direction: column;
+    height: 70%;
+    gap: 10%;
+  }
+
+  .scooter-in-card {
+    position: absolute;
+    height: 110%;
+    left: 35%;
+    bottom: 5%;
+    z-index: 0;
+  }
 }
 
 @media (max-width: 1200px) {
@@ -1997,5 +2188,199 @@ body::-webkit-scrollbar-track {
   }
   .title_in-slider {
     color: #ff4c0d;
+  }
+
+  /*      feedback section             ================================================================================                                            */
+  .feedback {
+    width: 100%;
+    overflow: hidden;
+    background-image: url(../assets/feedback-bg.png);
+    background-size: cover;
+  }
+
+  .feedback__title {
+    width: 100%;
+    padding: 6vh 10vw 4vh 10vw;
+  }
+
+  .review {
+    margin: 0 3vw 0 3vw;
+    width: 45vw;
+    aspect-ratio: 1.7/1.2;
+    box-sizing: border-box;
+
+    background-color: #151515;
+    border-radius: 15px;
+  }
+  .slider-menu {
+    padding: 5vh 10vw 5vh 10vw;
+    display: flex;
+    justify-content: space-between;
+  }
+  .slider-nav__buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+  }
+
+  .review_make {
+    border-radius: 65px;
+    background-color: #f1f1f1;
+    color: #151515;
+    border-color: rgba(0, 0, 0, 0);
+    box-shadow: none;
+    cursor: pointer;
+    height: 54px;
+    width: 190px;
+    align-self: center;
+    font-weight: 700;
+    font-size: 16px;
+  }
+  .prev {
+    width: 54px;
+    aspect-ratio: 1/1;
+    background-image: url(../assets/next-button.svg);
+    transform: rotate(180deg);
+    border-radius: 54px;
+    background-position: center;
+    border: none;
+    cursor: pointer;
+  }
+  .next {
+    width: 54px;
+    aspect-ratio: 1/1;
+    background-image: url(../assets/next-button.svg);
+    border-radius: 54px;
+    background-position: center;
+    border: none;
+    cursor: pointer;
+  }
+
+  .review-point {
+    padding: 40px 20px 40px 20px;
+  }
+
+  .review-point__title {
+    font-family: Gilroy;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 24px;
+    text-align: left;
+    color: #f1f1f1;
+  }
+
+  .review-point__line {
+    background-color: #ff4c0d;
+    height: 3px;
+    width: 25%;
+    margin: 15px 0 15px 0;
+  }
+
+  .review-point__text-content {
+    font-family: Gilroy;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: -0.01em;
+    text-align: left;
+    color: #f1f1f1;
+    padding: 0 10px 0 0;
+  }
+
+  /* feedback info section ================================== */
+
+  .feedback-info {
+    padding: 6vh 10vw 6vh 10vw;
+  }
+
+  .feedback__questions {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .questions__ask {
+    width: 40%;
+    padding: 40px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 6vh;
+  }
+  .questions__popular {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .questions__ask > .features-point__text-content {
+    width: 70%;
+  }
+
+  .button_ask {
+    border-radius: 65px;
+    background-color: #f1f1f1;
+    color: #151515;
+    border-color: rgba(0, 0, 0, 0);
+    box-shadow: none;
+    cursor: pointer;
+    height: 54px;
+    width: 190px;
+    align-self: start;
+    font-weight: 700;
+    font-size: 16px;
+  }
+
+  .container-card {
+    padding: 6vh 10vw 6vh 10vw;
+    position: relative;
+  }
+
+  .buy-card {
+    background-image: url(../assets/buy-card-bg.svg);
+    width: 100%;
+    aspect-ratio: 2.11/1.5;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-sizing: border-box;
+    padding: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .preview-description.card__price {
+    color: #ff4c0d;
+  }
+
+  .button-buy_orange {
+    background-color: #ff4c0d;
+    color: #f1f1f1;
+    width: 130px;
+  }
+
+  .buy-card__input {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+  }
+
+  .container_in-card {
+    display: flex;
+    flex-direction: column;
+    height: 70%;
+    gap: 10%;
+  }
+
+  .scooter-in-card {
+    position: absolute;
+    height: 110%;
+    left: 35%;
+    bottom: 5%;
+    z-index: 0;
+  }
+
+  .delivery-set {
+    display: none;
   }
 }

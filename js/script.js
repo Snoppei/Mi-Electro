@@ -176,12 +176,22 @@ $(function () {
     verticalSwiping: true,
     arrows: false,
     draggable: true,
+    responsive: [
+      {
+        breakpoint: 563,
+        settings: {
+          vertical: false,
+          verticalSwiping: false
+        }
+      }
+    ]
   });
 });
 
 $(function () {
+  try {
   $(".multiple-item").slick({
-    infinite: false,
+    infinite: true, // пришлось перейти на infinite так как при расширенни окна слайдер ломался
     dots: false,
     vertical: false,
     verticalSwiping: false,
@@ -189,18 +199,46 @@ $(function () {
     draggable: false,
     slidesToShow: 2.7,
     slidesToScroll: 1,
-    centerMode: true,
+    centerMode: false,
     centerPadding: "0px",
     initialSlide: 1,
+    responsive: [
+      {
+        breakpoint: 1200,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1
+        }
+      },
+      {
+        breakpoint: 992,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      },
+      {
+        breakpoint: 563,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          dots: true
+        }
+      },
+    ]
   });
+} catch (error) {
+  console.debug('Ошибочка:', error);
+}
+
 });
 
 $(".prev").click(function () {
-  if ($(".multiple-item").slick("slickCurrentSlide") > 1) {
+  // if ($(".multiple-item").slick("slickCurrentSlide") > 1) {
     $(".multiple-item").slick("slickPrev");
-  } else {
-    return;
-  }
+  // } else {
+  //   return;
+  // }
 });
 
 $(".next").click(function () {
