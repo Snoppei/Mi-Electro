@@ -808,6 +808,20 @@
   .delivery-set {
     display: none;
   }
+  .footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0 10vw 6vh 10vw;
+  }
+  .footer > .review-point__text-content {
+    text-align: center;
+    margin: 0;
+  }
+  .footer > .review-point__text-content:last-child {
+    text-align: center;
+    margin-top: 20px;
+  }
 }
 
 @media (max-width: 562px) {
@@ -1479,6 +1493,11 @@
 
   .review-point {
     padding: 40px 20px 40px 20px;
+  }
+
+  .questions__popular > .review-point {
+    padding-left: 0;
+    padding-right: 0;
   }
 
   .review-point__title {

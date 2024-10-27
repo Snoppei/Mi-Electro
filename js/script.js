@@ -52,16 +52,16 @@ $(document).ready(function () {
     $(this).toggleClass("switch-on");
     setTimeout(function() {
       if($(".switch-btn_in-card").hasClass('switch-on')) {
-        $(".scooter-in-card").attr('src', '/assets/scooter-black.svg')
+        $(".scooter-in-card").attr('src', 'assets/scooter-black.svg')
       } else {
-        $(".scooter-in-card").attr('src', '/assets/scooter-white.svg')
+        $(".scooter-in-card").attr('src', 'assets/scooter-white.svg')
       }
     }, 300);
   });
 
-    if($(".switch-btn_in-card").hasClass('switch-on')) {
-      $(".scooter-in-card").attr('src', '/assets/scooter-black.svg')
-    }
+    // if($(".switch-btn_in-card").hasClass('switch-on')) {
+    //   $(".scooter-in-card").attr('src', 'assets/scooter-black.svg')
+    // }
 
   $(`${classesAndUrls[0][0]}`).click(function () {
     smootlyChangeFeaturesCardsBG(
