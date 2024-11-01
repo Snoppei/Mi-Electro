@@ -1,9 +1,9 @@
 @media (max-width: 992px) {
   .header {
-    height: 6vh;
     display: grid;
     grid-template-columns: repeat(9, 1fr);
     gap: 0.7vw;
+    height: 6vh;
   }
 
   .logo {
@@ -22,20 +22,20 @@
   }
 
   .nav-menu {
-    align-items: center;
     display: flex;
     flex-direction: row;
-    gap: 3vw;
     grid-column: 2 / 8;
     grid-row: 1;
+    align-items: center;
+    gap: 3vw;
   }
 
   .nav-menu__item {
     display: none;
-    text-decoration: unset;
-    background-color: rgb(0, 0, 0 / 0);
     color: #f1f1f1;
     font-size: 10px;
+    text-decoration: unset;
+    background-color: rgb(0, 0, 0 / 0);
   }
 
   .button-buy {
@@ -45,31 +45,31 @@
   .button-menu {
     display: inline-block;
     grid-column: 9;
+    align-self: center;
+    width: 54px;
+    height: 54px;
+    border-color: rgba(0, 0, 0, 0);
     border-radius: 65px;
+    box-shadow: none;
+    color: #151515;
     background-image: url(../assets/640x960/mobile-menu-button-bg.png);
     background-position: center;
-    color: #151515;
-    border-color: rgba(0, 0, 0, 0);
-    box-shadow: none;
     cursor: pointer;
-    height: 54px;
-    width: 54px;
-    align-self: center;
   }
 
   h1 {
     font-family: "Gilroy", sans-serif;
-    font-size: 75px;
     font-weight: 600;
+    font-size: 75px;
     line-height: 80px;
     text-align: left;
   }
 
   .hero {
+    box-sizing: border-box;
     padding: 2vh 10vw 2vh 10vw;
     background-image: url(../assets/640x960/hero-section-bg-640x960.png);
     background-size: cover;
-    box-sizing: border-box;
   }
 
   .preview {
@@ -77,10 +77,10 @@
   }
 
   .preview-title {
-    font-weight: 600;
-    line-height: 48px;
-    font-size: 40px;
     margin-bottom: 30px;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 48px;
   }
 
   .preview-title_color {
@@ -88,10 +88,10 @@
   }
 
   .preview-description {
-    font-weight: 600;
-    line-height: 24px;
-    font-size: 20px;
     margin-bottom: 6vh;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
   }
 
   .preview-description_color {
@@ -99,45 +99,33 @@
   }
 
   .switch-btn {
-    display: inline-block;
-    width: 248px;
-    /* ширина переключателя */
-    height: 54px;
-    /* высота переключателя */
-    border-radius: 108px;
-    /* радиус скругления */
-    background: rgba(0, 0, 0, 0);
-    /* цвет фона */
-    border-style: solid;
-    border-width: 3px;
-    border-color: #f1f1f1;
-    z-index: 0;
-    margin: 0;
-    padding: 0;
-    cursor: pointer;
     position: relative;
-    transition-duration: 300ms;
-    /* анимация */
+    z-index: 0;
+    display: inline-block;
     box-sizing: content-box;
+    width: 248px;
+    height: 54px;
+    margin: 0;
+    border-width: 3px;
+    border-style: solid;
+    border-color: #f1f1f1;
+    border-radius: 108px;
+    padding: 0;
+    background: rgba(0, 0, 0, 0);
+    transition-duration: 300ms;
+    cursor: pointer;
   }
 
   .switch-btn::after {
     content: "";
-    height: 54px;
-    /* высота кнопки */
-    width: 118px;
-    /* ширина кнопки */
-    border-radius: 65px;
-    /* радиус кнопки */
-    background: #f1f1f1;
-    /* цвет кнопки */
-    /*top: -1px;  положение кнопки по вертикали относительно основы */
-    left: -1px;
-    /* положение кнопки по горизонтали относительно основы */
-    transition-duration: 300ms;
-    /* анимация */
     position: absolute;
+    left: -1px;
     z-index: 1;
+    width: 118px;
+    height: 54px;
+    border-radius: 65px;
+    background: #f1f1f1;
+    transition-duration: 300ms;
   }
 
   .switch-on {
@@ -151,25 +139,25 @@
 
   .switch-btn__content {
     position: absolute;
+    z-index: 2;
     font-family: Gilroy;
-    font-size: 14px;
     font-weight: 700;
+    font-size: 14px;
     line-height: 24px;
     text-align: left;
-    z-index: 2;
     transition-duration: 300ms;
     transition-timing-function: ease-in-out;
   }
 
   .switch-btn__content_first {
-    left: 30px;
     top: 15px;
+    left: 30px;
     color: #151515;
   }
 
   .switch-btn__content_second {
-    left: 165px;
     top: 15px;
+    left: 165px;
     color: #f1f1f1;
   }
 
@@ -182,12 +170,12 @@
   }
 
   .title {
+    color: #f1f1f1;
     font-family: Gilroy;
-    font-size: 43px;
     font-weight: 500;
+    font-size: 43px;
     line-height: 49.5px;
     text-align: left;
-    color: #f1f1f1;
   }
 
   .title_color {
@@ -223,10 +211,10 @@
   }
 
   .features-point__line {
-    background-color: #ff4c0d;
-    height: 3px;
     width: 25%;
+    height: 3px;
     margin: 15px 0 15px 0;
+    background-color: #ff4c0d;
   }
 
   .features-point:hover > .features-point__line {
@@ -234,32 +222,32 @@
   }
 
   .features-point__title {
+    color: #ff4c0d;
     font-family: Gilroy;
-    font-size: 20px;
     font-weight: 600;
+    font-size: 20px;
     line-height: 24px;
     text-align: left;
-    color: #ff4c0d;
   }
 
   .features-point__text-content {
+    margin-bottom: 15px;
+    color: #f1f1f1;
     font-family: Gilroy;
-    font-size: 14px;
     font-weight: 400;
+    font-size: 14px;
     line-height: 22.4px;
     letter-spacing: -0.01em;
     text-align: left;
-    color: #f1f1f1;
-    margin-bottom: 15px;
   }
 
   .features-point__image {
-    border-radius: 15px;
-    transform: rotateY(3.142rad);
     width: 100%;
     height: 36vh;
-    background-size: cover;
+    border-radius: 15px;
     background-position: center;
+    background-size: cover;
+    transform: rotateY(3.142rad);
   }
 
   .features-point_first > .features-point__image {
@@ -289,22 +277,22 @@
   /*============================================== subsection 2 ============================================== */
 
   .subsection-feature {
-    background-image: url(../assets/speedSubSectionBG.png);
     height: 70vh;
-    background-size: cover;
+    background-image: url(../assets/speedSubSectionBG.png);
     background-repeat: no-repeat;
     background-position: bottom;
+    background-size: cover;
   }
 
   .subsection-feature__container {
-    padding: 6vh 10vw 6vh 10vw;
-    height: 100%;
-    width: 100%;
-    box-sizing: border-box;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-start;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    padding: 6vh 10vw 6vh 10vw;
     background: linear-gradient(
       90deg,
       rgba(0, 0, 0, 0.5) 0%,
@@ -326,80 +314,80 @@
   /*============================================== section 3 ============================================== */
 
   .section-features {
-    padding: 18vh 10vw 6vh 10vw;
-    background-image: url(../assets/640x960/features-section-bg-640x960.png);
-    background-size: cover;
-    box-sizing: border-box;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     gap: 18vh;
+    box-sizing: border-box;
+    padding: 18vh 10vw 6vh 10vw;
+    background-image: url(../assets/640x960/features-section-bg-640x960.png);
+    background-size: cover;
   }
 
   .features-card_first {
-    width: 100%;
-    aspect-ratio: 16.1/16.1;
     position: relative;
+    width: 100%;
     border-radius: 15px;
+    aspect-ratio: 16.1/16.1;
   }
 
   .features-card__bg-design {
+    position: relative;
+    z-index: 0;
     width: 100%;
     height: 74%;
-    position: relative;
-    background-image: url(../assets/features-card-design-bg.png);
-    background-size: cover;
-    background-position: 10% -50%;
-    background-repeat: no-repeat;
-    z-index: 0;
     border-radius: 15px;
+    background-image: url(../assets/features-card-design-bg.png);
+    background-repeat: no-repeat;
+    background-position: 10% -50%;
+    background-size: cover;
   }
 
   .feature-box_in-card {
+    position: absolute;
+    bottom: 0;
+    z-index: 1;
+    box-sizing: border-box;
     width: 100%;
     height: 50%;
-    position: absolute;
-    box-sizing: border-box;
-    z-index: 1;
-    bottom: 0;
+    border-radius: 15px;
     background: linear-gradient(
       0deg,
       #0e0e0e 50.18%,
       rgba(14, 14, 14, 0) 88.52%
     );
-    border-radius: 15px;
   }
 
   .feature-title {
+    margin-top: 5vh;
+    padding: 15% 5vw 10px 5vw;
+    color: #f1f1f1;
     font-family: Gilroy;
-    font-size: 20px;
     font-weight: 600;
+    font-size: 20px;
     line-height: 24px;
     text-align: left;
-    color: #f1f1f1;
-    padding: 15% 5vw 10px 5vw;
-    margin-top: 5vh;
   }
 
   .feature-content {
+    padding: 0 5vw 15% 5vw;
+    color: #f1f1f1;
     font-family: Gilroy;
-    font-size: 14px;
     font-weight: 400;
+    font-size: 14px;
     line-height: 21px;
     letter-spacing: -0.01em;
     text-align: left;
-    padding: 0 5vw 15% 5vw;
-    color: #f1f1f1;
   }
 
   .features-card_second {
-    width: 100%;
-    background-image: url(../assets/scooterScreen.png);
-    background-size: cover;
-    background-position: top;
-    aspect-ratio: 16.1/16.1;
     position: relative;
+    width: 100%;
     border-radius: 15px;
+    background-image: url(../assets/scooterScreen.png);
+    background-position: top;
+    background-size: cover;
+    aspect-ratio: 16.1/16.1;
   }
 
   .feature-box_in-card__no-gradient {
@@ -411,14 +399,14 @@
   }
 
   .feature-box__gradient-layer {
+    width: 100%;
+    height: 50%;
+    border-radius: 15px;
     background: linear-gradient(
       180deg,
       #0e0e0e 20.18%,
       rgba(14, 14, 14, 0) 88.52%
     );
-    width: 100%;
-    height: 50%;
-    border-radius: 15px;
   }
 
   .flex-container {
@@ -437,31 +425,31 @@
   }
 
   .safety-image_current {
-    border-radius: 15px;
-    background-image: url(../assets/safety-first.png);
-    transition-property: background-image, opacity;
-    transition-duration: 300ms;
-    transition-timing-function: ease;
-    transform: rotateY(3.142rad);
-    width: 100%;
-    background-size: cover;
-    background-position: right;
     grid-column: 1 / 24;
     grid-row: 1 / 5;
+    width: 100%;
+    border-radius: 15px;
+    background-image: url(../assets/safety-first.png);
+    background-position: right;
+    background-size: cover;
+    transition-duration: 300ms;
+    transition-property: background-image, opacity;
+    transition-timing-function: ease;
+    transform: rotateY(3.142rad);
   }
 
   .safety-image_next {
-    border-radius: 15px;
-    background-image: url(../assets/safety-second.png);
-    transition-property: background-image, opacity;
-    transition-duration: 300ms;
-    transition-timing-function: ease;
-    transform: rotateY(3.142rad);
-    width: 100%;
-    background-size: cover;
-    background-position: center;
     grid-column: 25/ 36;
     grid-row: 1 / 4;
+    width: 100%;
+    border-radius: 15px;
+    background-image: url(../assets/safety-second.png);
+    background-position: center;
+    background-size: cover;
+    transition-duration: 300ms;
+    transition-property: background-image, opacity;
+    transition-timing-function: ease;
+    transform: rotateY(3.142rad);
   }
 
   .safety-point_first > .safety__image {
@@ -494,20 +482,20 @@
   }
 
   .badge__app-store {
-    cursor: pointer;
     width: 30%;
+    cursor: pointer;
   }
 
   .badge__google-play {
-    cursor: pointer;
     width: 30%;
+    cursor: pointer;
   }
 
   .subsection-card__mobile-app {
-    width: 100%;
-    height: 100%;
     gap: 3vh;
     align-self: center;
+    width: 100%;
+    height: 100%;
   }
 
   .subsection-card__mobile-app > .features-point__text-content {
@@ -515,22 +503,22 @@
   }
 
   .phone-preview {
-    align-self: center;
-    display: inline-block;
     position: relative;
+    display: inline-block;
+    align-self: center;
+    box-sizing: border-box;
     width: 90%;
     min-height: 60vh;
     max-height: 100vh;
-    box-sizing: border-box;
     overflow: hidden;
   }
 
   .phone {
-    margin: 0 auto;
     box-sizing: border-box;
-    object-fit: cover;
     width: 100%;
     height: 100%;
+    margin: 0 auto;
+    object-fit: cover;
     object-position: top;
   }
 
@@ -558,52 +546,60 @@
     width: 100vw;
     height: 70vh;
   }
+
   .slide_second {
     content: "placeholder";
     width: 100vw;
     height: 70vh;
     background-color: gray;
   }
+
   .slide_third {
     content: "placeholder";
     width: 100vw;
     height: 70vh;
     background-color: gray;
   }
+
   .about-xiaomi {
-    background-image: url(../assets/about-xiaomi.jpg);
-    background-size: cover;
-    background-position: center;
     width: 100vw;
     height: 70vh;
-  }
-  .placeholder {
-    background-image: url(../assets/placeholder-1024x1024.png);
-    background-size: cover;
+    background-image: url(../assets/about-xiaomi.jpg);
     background-position: center;
+    background-size: cover;
+  }
+
+  .placeholder {
     height: 100%;
     height: 70vh;
+    background-image: url(../assets/placeholder-1024x1024.png);
+    background-position: center;
+    background-size: cover;
   }
 
   .gradient-wrap {
-    background: rgba(232, 181, 119, 0.25);
-    height: 100%;
     width: 100%;
+    height: 100%;
+    background: rgba(232, 181, 119, 0.25);
   }
 
   .text-content__black {
-    color: #151515;
     width: 60%;
+    color: #151515;
   }
+
   .slick-slide .slider__logo_orange {
     display: inline-block;
   }
+
   .slick-slide .slider__logo_white {
     display: none;
   }
+
   .subsection-feature__container_in-slider {
     background: none;
   }
+
   .title_in-slider {
     color: #ff4c0d;
   }
@@ -622,19 +618,21 @@
   }
 
   .review {
-    margin: 0 10vw 0 10vw;
-    width: 80vw;
-    aspect-ratio: 1.7/1.2;
     box-sizing: border-box;
+    width: 80vw;
+    margin: 0 10vw 0 10vw;
+    border-radius: 15px;
 
     background-color: #151515;
-    border-radius: 15px;
+    aspect-ratio: 1.7/1.2;
   }
+
   .slider-menu {
-    padding: 5vh 10vw 5vh 10vw;
     display: flex;
     justify-content: space-between;
+    padding: 5vh 10vw 5vh 10vw;
   }
+
   .slider-nav__buttons {
     display: flex;
     flex-direction: row;
@@ -642,36 +640,38 @@
   }
 
   .review_make {
-    border-radius: 65px;
-    background-color: #f1f1f1;
-    color: #151515;
-    border-color: rgba(0, 0, 0, 0);
-    box-shadow: none;
-    cursor: pointer;
-    height: 54px;
-    width: 190px;
     align-self: center;
+    width: 190px;
+    height: 54px;
+    border-color: rgba(0, 0, 0, 0);
+    border-radius: 65px;
+    box-shadow: none;
+    color: #151515;
     font-weight: 700;
     font-size: 16px;
+    background-color: #f1f1f1;
+    cursor: pointer;
   }
+
   .prev {
     width: 54px;
-    aspect-ratio: 1/1;
-    background-image: url(../assets/next-button.svg);
-    transform: rotate(180deg);
-    border-radius: 54px;
-    background-position: center;
     border: none;
+    border-radius: 54px;
+    background-image: url(../assets/next-button.svg);
+    background-position: center;
+    transform: rotate(180deg);
     cursor: pointer;
+    aspect-ratio: 1/1;
   }
+
   .next {
     width: 54px;
-    aspect-ratio: 1/1;
-    background-image: url(../assets/next-button.svg);
-    border-radius: 54px;
-    background-position: center;
     border: none;
+    border-radius: 54px;
+    background-image: url(../assets/next-button.svg);
+    background-position: center;
     cursor: pointer;
+    aspect-ratio: 1/1;
   }
 
   .review-point {
@@ -679,30 +679,30 @@
   }
 
   .review-point__title {
+    color: #f1f1f1;
     font-family: Gilroy;
-    font-size: 20px;
     font-weight: 600;
+    font-size: 20px;
     line-height: 24px;
     text-align: left;
-    color: #f1f1f1;
   }
 
   .review-point__line {
-    background-color: #ff4c0d;
-    height: 3px;
     width: 25%;
+    height: 3px;
     margin: 15px 0 15px 0;
+    background-color: #ff4c0d;
   }
 
   .review-point__text-content {
+    padding: 0 10px 0 0;
+    color: #f1f1f1;
     font-family: Gilroy;
-    font-size: 14px;
     font-weight: 400;
+    font-size: 14px;
     line-height: 21px;
     letter-spacing: -0.01em;
     text-align: left;
-    color: #f1f1f1;
-    padding: 0 10px 0 0;
   }
 
   /* feedback info section ================================== */
@@ -718,23 +718,25 @@
   }
 
   .questions__ask {
-    width: 40%;
-    padding: 40px 0;
     display: flex;
     flex-direction: column;
     gap: 6vh;
+    width: 40%;
+    padding: 40px 0;
   }
 
   .questions__ask > .title {
     font-size: 25px;
   }
+
   .questions__ask > .button_ask {
     width: 80%;
   }
+
   .questions__popular {
-    width: 60%;
     display: flex;
     flex-direction: column;
+    width: 60%;
   }
 
   .questions__ask > .features-point__text-content {
@@ -742,35 +744,35 @@
   }
 
   .button_ask {
-    border-radius: 65px;
-    background-color: #f1f1f1;
-    color: #151515;
-    border-color: rgba(0, 0, 0, 0);
-    box-shadow: none;
-    cursor: pointer;
-    height: 54px;
-    width: 190px;
     align-self: start;
+    width: 190px;
+    height: 54px;
+    border-color: rgba(0, 0, 0, 0);
+    border-radius: 65px;
+    box-shadow: none;
+    color: #151515;
     font-weight: 700;
     font-size: 16px;
+    background-color: #f1f1f1;
+    cursor: pointer;
   }
 
   .container-card {
-    padding: 6vh 10vw 6vh 10vw;
     position: relative;
+    padding: 6vh 10vw 6vh 10vw;
   }
 
   .buy-card {
-    background-image: url(../assets/buy-card-bg.svg);
-    width: 100%;
-    aspect-ratio: 1/1;
-    background-repeat: no-repeat;
-    background-size: cover;
-    box-sizing: border-box;
-    padding: 60px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 60px;
+    background-image: url(../assets/buy-card-bg.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    aspect-ratio: 1/1;
   }
 
   .preview-description.card__price {
@@ -778,9 +780,9 @@
   }
 
   .button-buy_orange {
-    background-color: #ff4c0d;
-    color: #f1f1f1;
     width: 130px;
+    color: #f1f1f1;
+    background-color: #ff4c0d;
   }
 
   .buy-card__input {
@@ -793,43 +795,46 @@
   .container_in-card {
     display: flex;
     flex-direction: column;
-    height: 70%;
     gap: 10%;
+    height: 70%;
   }
 
   .scooter-in-card {
     position: absolute;
-    height: 110%;
-    left: 30%;
     bottom: 5%;
+    left: 30%;
     z-index: 0;
+    height: 110%;
   }
 
   .delivery-set {
     display: none;
   }
+
   .footer {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     padding: 0 10vw 6vh 10vw;
   }
+
   .footer > .review-point__text-content {
-    text-align: center;
     margin: 0;
-  }
-  .footer > .review-point__text-content:last-child {
     text-align: center;
+  }
+
+  .footer > .review-point__text-content:last-child {
     margin-top: 20px;
+    text-align: center;
   }
 }
 
 @media (max-width: 562px) {
   .header {
-    height: 6vh;
     display: grid;
     grid-template-columns: repeat(9, 1fr);
     gap: 0.7vw;
+    height: 6vh;
   }
 
   .logo {
@@ -848,20 +853,20 @@
   }
 
   .nav-menu {
-    align-items: center;
     display: flex;
     flex-direction: row;
-    gap: 3vw;
     grid-column: 2 / 8;
     grid-row: 1;
+    align-items: center;
+    gap: 3vw;
   }
 
   .nav-menu__item {
     display: none;
-    text-decoration: unset;
-    background-color: rgb(0, 0, 0 / 0);
     color: #f1f1f1;
     font-size: 10px;
+    text-decoration: unset;
+    background-color: rgb(0, 0, 0 / 0);
   }
 
   .button-buy {
@@ -871,31 +876,31 @@
   .button-menu {
     display: inline-block;
     grid-column: 9;
+    align-self: center;
+    width: 54px;
+    height: 54px;
+    border-color: rgba(0, 0, 0, 0);
     border-radius: 65px;
+    box-shadow: none;
+    color: #151515;
     background-image: url(../assets/640x960/mobile-menu-button-bg.png);
     background-position: center;
-    color: #151515;
-    border-color: rgba(0, 0, 0, 0);
-    box-shadow: none;
     cursor: pointer;
-    height: 54px;
-    width: 54px;
-    align-self: center;
   }
 
   h1 {
     font-family: "Gilroy", sans-serif;
-    font-size: 75px;
     font-weight: 600;
+    font-size: 75px;
     line-height: 80px;
     text-align: left;
   }
 
   .hero {
+    box-sizing: border-box;
     padding: 2vh 10vw 2vh 10vw;
     background-image: url(../assets/320x480/hero-section-bg-320x480.png);
     background-size: cover;
-    box-sizing: border-box;
   }
 
   .preview {
@@ -903,10 +908,10 @@
   }
 
   .preview-title {
-    font-weight: 600;
-    line-height: 30px;
-    font-size: 30px;
     margin-bottom: 30px;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 30px;
   }
 
   .preview-title_color {
@@ -914,10 +919,10 @@
   }
 
   .preview-description {
-    font-weight: 600;
-    line-height: 19.2px;
-    font-size: 16px;
     margin-bottom: 6vh;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19.2px;
   }
 
   .preview-description_color {
@@ -925,45 +930,33 @@
   }
 
   .switch-btn {
-    display: inline-block;
-    width: 100%;
-    /* ширина переключателя */
-    height: 54px;
-    /* высота переключателя */
-    border-radius: 108px;
-    /* радиус скругления */
-    background: rgba(0, 0, 0, 0);
-    /* цвет фона */
-    border-style: solid;
-    border-width: 3px;
-    border-color: #f1f1f1;
-    z-index: 0;
-    margin: 0;
-    padding: 0;
-    cursor: pointer;
     position: relative;
-    transition-duration: 300ms;
-    /* анимация */
+    z-index: 0;
+    display: inline-block;
     box-sizing: content-box;
+    width: 100%;
+    height: 54px;
+    margin: 0;
+    border-width: 3px;
+    border-style: solid;
+    border-color: #f1f1f1;
+    border-radius: 108px;
+    padding: 0;
+    background: rgba(0, 0, 0, 0);
+    transition-duration: 300ms;
+    cursor: pointer;
   }
 
   .switch-btn::after {
     content: "";
-    height: 54px;
-    /* высота кнопки */
-    width: 50%;
-    /* ширина кнопки */
-    border-radius: 65px;
-    /* радиус кнопки */
-    background: #f1f1f1;
-    /* цвет кнопки */
-    /*top: -1px;  положение кнопки по вертикали относительно основы */
-    left: -1px;
-    /* положение кнопки по горизонтали относительно основы */
-    transition-duration: 300ms;
-    /* анимация */
     position: absolute;
+    left: -1px;
     z-index: 1;
+    width: 50%;
+    height: 54px;
+    border-radius: 65px;
+    background: #f1f1f1;
+    transition-duration: 300ms;
   }
 
   .switch-on {
@@ -977,25 +970,25 @@
 
   .switch-btn__content {
     position: absolute;
+    z-index: 2;
     font-family: Gilroy;
-    font-size: 16px;
     font-weight: 700;
+    font-size: 16px;
     line-height: 24px;
     text-align: left;
-    z-index: 2;
     transition-duration: 300ms;
     transition-timing-function: ease-in-out;
   }
 
   .switch-btn__content_first {
-    left: 16%;
     top: 15px;
+    left: 16%;
     color: #151515;
   }
 
   .switch-btn__content_second {
-    left: 66%;
     top: 15px;
+    left: 66%;
     color: #f1f1f1;
   }
 
@@ -1008,12 +1001,12 @@
   }
 
   .title {
+    color: #f1f1f1;
     font-family: Gilroy;
-    font-size: 25px;
     font-weight: 600;
+    font-size: 25px;
     line-height: 30px;
     text-align: left;
-    color: #f1f1f1;
   }
 
   .title_color {
@@ -1049,10 +1042,10 @@
   }
 
   .features-point__line {
-    background-color: #ff4c0d;
-    height: 3px;
     width: 25%;
+    height: 3px;
     margin: 15px 0 15px 0;
+    background-color: #ff4c0d;
   }
 
   .features-point:hover > .features-point__line {
@@ -1060,32 +1053,32 @@
   }
 
   .features-point__title {
+    color: #ff4c0d;
     font-family: Gilroy;
-    font-size: 16px;
     font-weight: 600;
+    font-size: 16px;
     line-height: 19.2px;
     text-align: left;
-    color: #ff4c0d;
   }
 
   .features-point__text-content {
+    margin-bottom: 15px;
+    color: #f1f1f1;
     font-family: Gilroy;
-    font-size: 12px;
     font-weight: 400;
+    font-size: 12px;
     line-height: 20.4px;
     letter-spacing: -0.01em;
     text-align: left;
-    color: #f1f1f1;
-    margin-bottom: 15px;
   }
 
   .features-point__image {
-    border-radius: 15px;
-    transform: rotateY(3.142rad);
     width: 100%;
     height: 36vh;
-    background-size: cover;
+    border-radius: 15px;
     background-position: center;
+    background-size: cover;
+    transform: rotateY(3.142rad);
   }
 
   .features-point_first > .features-point__image {
@@ -1115,22 +1108,22 @@
   /*============================================== subsection 2 ============================================== */
 
   .subsection-feature {
-    background-image: url(../assets/speedSubSectionBG.png);
     height: 65vh;
-    background-size: cover;
+    background-image: url(../assets/speedSubSectionBG.png);
     background-repeat: no-repeat;
     background-position: bottom;
+    background-size: cover;
   }
 
   .subsection-feature__container {
-    padding: 6vh 10vw 6vh 10vw;
-    height: 100%;
-    width: 100%;
-    box-sizing: border-box;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-start;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    padding: 6vh 10vw 6vh 10vw;
     background: linear-gradient(
       0deg,
       rgba(0, 0, 0, 0.5) 0%,
@@ -1146,85 +1139,87 @@
 
   .logo__always-on {
     display: inline-block;
-    margin-right: auto;
     height: 30px;
+    margin-right: auto;
   }
 
   /*============================================== section 3 ============================================== */
 
   .section-features {
-    padding: 10vh 10vw 6vh 10vw;
-    background-image: url(../assets/320x480/features-section-bg-320x480.png);
-    background-size: cover;
-    box-sizing: border-box;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     gap: 10vh;
+    box-sizing: border-box;
+    padding: 10vh 10vw 6vh 10vw;
+    background-image: url(../assets/320x480/features-section-bg-320x480.png);
+    background-size: cover;
   }
 
   .features-card_first {
-    width: 100%;
-    aspect-ratio: 16.1/16.1;
     position: relative;
+    width: 100%;
     border-radius: 15px;
+    aspect-ratio: 16.1/16.1;
   }
 
   .features-card__bg-design {
+    position: relative;
+    z-index: 0;
     width: 100%;
     height: 100%;
-    position: relative;
-    background-image: url(../assets/features-card-design-bg.png);
-    background-size: cover;
-    background-position: 25%;
-    background-repeat: no-repeat;
-    z-index: 0;
     border-radius: 15px;
+    background-image: url(../assets/features-card-design-bg.png);
+    background-repeat: no-repeat;
+    background-position: 25%;
+    background-size: cover;
   }
 
   .feature-box_in-card {
+    position: absolute;
+    bottom: 0;
+    z-index: 1;
+    box-sizing: border-box;
     width: 100%;
     height: 50%;
-    position: absolute;
-    box-sizing: border-box;
-    z-index: 1;
-    bottom: 0;
+    border-radius: 15px;
     background: linear-gradient(
       0deg,
       #0e0e0e 50.18%,
       rgba(14, 14, 14, 0) 88.52%
     );
-    border-radius: 15px;
   }
 
   .feature-title {
+    margin-top: 5vh;
+    padding: 15% 5vw 10px 5vw;
+    color: #f1f1f1;
     font-family: Gilroy;
-    font-size: 20px;
     font-weight: 600;
+    font-size: 20px;
     line-height: 24px;
     text-align: left;
-    color: #f1f1f1;
-    padding: 15% 5vw 10px 5vw;
-    margin-top: 5vh;
   }
 
   .feature-content {
+    padding: 0 5vw 15% 5vw;
+    color: #f1f1f1;
     font-family: Gilroy;
-    font-size: 14px;
     font-weight: 400;
+    font-size: 14px;
     line-height: 21px;
     letter-spacing: -0.01em;
     text-align: left;
-    padding: 0 5vw 15% 5vw;
-    color: #f1f1f1;
   }
 
   .features-card_first > .feature-box_in-card {
     display: none;
   }
+
   .feature-box_in-card > .feature-content {
     display: none;
   }
+
   .feature-box_in-card > .feature-title {
     display: none;
   }
@@ -1237,18 +1232,19 @@
     margin-top: 0;
     padding: 0 0 10px 0;
   }
+
   .feature-box_outside-card > .feature-content {
     padding: 0 0 10px 0;
   }
 
   .features-card_second {
-    width: 100%;
-    background-image: url(../assets/scooterScreen.png);
-    background-size: cover;
-    background-position: top;
-    aspect-ratio: 16.1/16.1;
     position: relative;
+    width: 100%;
     border-radius: 15px;
+    background-image: url(../assets/scooterScreen.png);
+    background-position: top;
+    background-size: cover;
+    aspect-ratio: 16.1/16.1;
   }
 
   .feature-box_in-card__no-gradient {
@@ -1260,14 +1256,14 @@
   }
 
   .feature-box__gradient-layer {
+    width: 100%;
+    height: 50%;
+    border-radius: 15px;
     background: linear-gradient(
       180deg,
       #0e0e0e 20.18%,
       rgba(14, 14, 14, 0) 88.52%
     );
-    width: 100%;
-    height: 50%;
-    border-radius: 15px;
   }
 
   .flex-container {
@@ -1286,31 +1282,31 @@
   }
 
   .safety-image_current {
-    border-radius: 15px;
-    background-image: url(../assets/safety-first.png);
-    transition-property: background-image, opacity;
-    transition-duration: 300ms;
-    transition-timing-function: ease;
-    transform: rotateY(3.142rad);
-    width: 100%;
-    background-size: cover;
-    background-position: right;
     grid-column: 1 / 24;
     grid-row: 1 / 5;
+    width: 100%;
+    border-radius: 15px;
+    background-image: url(../assets/safety-first.png);
+    background-position: right;
+    background-size: cover;
+    transition-duration: 300ms;
+    transition-property: background-image, opacity;
+    transition-timing-function: ease;
+    transform: rotateY(3.142rad);
   }
 
   .safety-image_next {
-    border-radius: 15px;
-    background-image: url(../assets/safety-second.png);
-    transition-property: background-image, opacity;
-    transition-duration: 300ms;
-    transition-timing-function: ease;
-    transform: rotateY(3.142rad);
-    width: 100%;
-    background-size: cover;
-    background-position: center;
     grid-column: 25/ 36;
     grid-row: 1 / 4;
+    width: 100%;
+    border-radius: 15px;
+    background-image: url(../assets/safety-second.png);
+    background-position: center;
+    background-size: cover;
+    transition-duration: 300ms;
+    transition-property: background-image, opacity;
+    transition-timing-function: ease;
+    transform: rotateY(3.142rad);
   }
 
   .safety-point_first > .safety__image {
@@ -1343,20 +1339,20 @@
   }
 
   .badge__app-store {
-    cursor: pointer;
     width: 30%;
+    cursor: pointer;
   }
 
   .badge__google-play {
-    cursor: pointer;
     width: 30%;
+    cursor: pointer;
   }
 
   .subsection-card__mobile-app {
-    width: 100%;
-    height: 100%;
     gap: 3vh;
     align-self: center;
+    width: 100%;
+    height: 100%;
   }
 
   .subsection-card__mobile-app > .features-point__text-content {
@@ -1364,21 +1360,21 @@
   }
 
   .phone-preview {
-    align-self: center;
-    display: inline-block;
     position: relative;
+    display: inline-block;
+    align-self: center;
+    box-sizing: border-box;
     width: 90%;
     height: 60vh;
-    box-sizing: border-box;
     overflow: hidden;
   }
 
   .phone {
-    margin: 0 auto;
     box-sizing: border-box;
-    object-fit: cover;
     width: 100%;
     height: 100%;
+    margin: 0 auto;
+    object-fit: cover;
     object-position: top;
   }
 
@@ -1401,26 +1397,30 @@
   .slick-slide .slider__logo_orange {
     display: none;
   }
+
   .slick-slide .slider__logo_white {
     display: inline-block;
   }
+
   .title_in-slider {
     color: #f1f1f1;
   }
-  /* Dots */
+
   .slick-dotted.slick-slider {
     margin-bottom: 0;
   }
 
   .slick-dots {
     bottom: 0 !important;
+    left: 43vw !important;
     flex-direction: row !important;
     width: 10vw !important;
-    left: 43vw !important;
   }
+
   .slick-dots li button:before {
     color: white !important;
   }
+
   .slick-dots li.slick-active button:before {
     color: white !important;
   }
@@ -1439,19 +1439,21 @@
   }
 
   .review {
-    margin: 0 10vw 0 10vw;
-    width: 80vw;
-    aspect-ratio: 1.7/1.2;
     box-sizing: border-box;
+    width: 80vw;
+    margin: 0 10vw 0 10vw;
+    border-radius: 15px;
 
     background-color: #151515;
-    border-radius: 15px;
+    aspect-ratio: 1.7/1.2;
   }
+
   .slider-menu {
-    padding: 5vh 10vw 5vh 10vw;
     display: flex;
     justify-content: space-around;
+    padding: 5vh 10vw 5vh 10vw;
   }
+
   .slider-nav__buttons {
     display: none;
     flex-direction: row;
@@ -1459,36 +1461,38 @@
   }
 
   .review_make {
-    border-radius: 65px;
-    background-color: #f1f1f1;
-    color: #151515;
-    border-color: rgba(0, 0, 0, 0);
-    box-shadow: none;
-    cursor: pointer;
-    height: 54px;
-    width: 190px;
     align-self: center;
+    width: 190px;
+    height: 54px;
+    border-color: rgba(0, 0, 0, 0);
+    border-radius: 65px;
+    box-shadow: none;
+    color: #151515;
     font-weight: 700;
     font-size: 16px;
+    background-color: #f1f1f1;
+    cursor: pointer;
   }
+
   .prev {
     width: 54px;
-    aspect-ratio: 1/1;
-    background-image: url(../assets/next-button.svg);
-    transform: rotate(180deg);
-    border-radius: 54px;
-    background-position: center;
     border: none;
+    border-radius: 54px;
+    background-image: url(../assets/next-button.svg);
+    background-position: center;
+    transform: rotate(180deg);
     cursor: pointer;
+    aspect-ratio: 1/1;
   }
+
   .next {
     width: 54px;
-    aspect-ratio: 1/1;
-    background-image: url(../assets/next-button.svg);
-    border-radius: 54px;
-    background-position: center;
     border: none;
+    border-radius: 54px;
+    background-image: url(../assets/next-button.svg);
+    background-position: center;
     cursor: pointer;
+    aspect-ratio: 1/1;
   }
 
   .review-point {
@@ -1496,35 +1500,35 @@
   }
 
   .questions__popular > .review-point {
-    padding-left: 0;
     padding-right: 0;
+    padding-left: 0;
   }
 
   .review-point__title {
+    color: #f1f1f1;
     font-family: Gilroy;
-    font-size: 20px;
     font-weight: 600;
+    font-size: 20px;
     line-height: 24px;
     text-align: left;
-    color: #f1f1f1;
   }
 
   .review-point__line {
-    background-color: #ff4c0d;
-    height: 3px;
     width: 25%;
+    height: 3px;
     margin: 15px 0 15px 0;
+    background-color: #ff4c0d;
   }
 
   .review-point__text-content {
+    padding: 0 10px 0 0;
+    color: #f1f1f1;
     font-family: Gilroy;
-    font-size: 14px;
     font-weight: 400;
+    font-size: 14px;
     line-height: 21px;
     letter-spacing: -0.01em;
     text-align: left;
-    color: #f1f1f1;
-    padding: 0 10px 0 0;
   }
 
   /* feedback info section ================================== */
@@ -1540,63 +1544,65 @@
   }
 
   .questions__ask {
-    width: 100%;
-    padding: 0 0;
     display: flex;
     flex-direction: column;
     align-items: start;
     gap: 3vh;
+    width: 100%;
+    padding: 0 0;
   }
 
   .questions__ask > .title {
-    font-size: 25px;
     color: #ff4c0d;
+    font-size: 25px;
   }
+
   .questions__ask > .button_ask {
     width: 80%;
   }
+
   .questions__popular {
-    width: 100%;
     display: flex;
     flex-direction: column;
+    width: 100%;
   }
 
   .questions__ask > .features-point__text-content {
     width: 100%;
-    padding: 0;
     margin: 0;
+    padding: 0;
   }
 
   .button_ask {
-    border-radius: 65px;
-    background-color: #f1f1f1;
-    color: #151515;
-    border-color: rgba(0, 0, 0, 0);
-    box-shadow: none;
-    cursor: pointer;
-    height: 54px;
-    width: 190px;
     align-self: center;
+    width: 190px;
+    height: 54px;
+    border-color: rgba(0, 0, 0, 0);
+    border-radius: 65px;
+    box-shadow: none;
+    color: #151515;
     font-weight: 700;
     font-size: 16px;
+    background-color: #f1f1f1;
+    cursor: pointer;
   }
 
   .container-card {
-    padding: 6vh 10vw 6vh 10vw;
     position: relative;
+    padding: 6vh 10vw 6vh 10vw;
   }
 
   .buy-card {
-    background-image: url(../assets/buy-card-bg.svg);
-    width: 100%;
-    aspect-ratio: 1/2;
-    background-repeat: no-repeat;
-    background-size: cover;
-    box-sizing: border-box;
-    padding: 10px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 10px;
+    background-image: url(../assets/buy-card-bg.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    aspect-ratio: 1/2;
   }
 
   .preview-description.card__price {
@@ -1604,32 +1610,32 @@
   }
 
   .button-buy_orange {
-    background-color: #ff4c0d;
-    color: #f1f1f1;
     width: 130px;
+    color: #f1f1f1;
+    background-color: #ff4c0d;
   }
 
   .buy-card__input {
-    padding: 20px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     height: 100%;
+    padding: 20px;
   }
 
   .container_in-card {
     display: flex;
     flex-direction: column;
-    height: 70%;
     gap: 10%;
+    height: 70%;
   }
 
   .scooter-in-card {
     position: absolute;
-    height: 40%;
-    left: -7vw;
     bottom: 20%;
+    left: -7vw;
     z-index: 0;
+    height: 40%;
   }
 
   .delivery-set {

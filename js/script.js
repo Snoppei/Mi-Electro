@@ -50,18 +50,20 @@ $(document).ready(function () {
 
   $(".switch-btn_in-card").click(function () {
     $(this).toggleClass("switch-on");
-    setTimeout(function() {
-      if($(".switch-btn_in-card").hasClass('switch-on')) {
-        $(".scooter-in-card").attr('src', 'assets/scooter-black.svg')
-      } else {
-        $(".scooter-in-card").attr('src', 'assets/scooter-white.svg')
-      }
-    }, 300);
+    if ($(".switch-btn_in-card").hasClass("switch-on")) {
+      setTimeout(function () {
+        $(".scooter-in-card_black").css("z-index", "1");
+      }, 200);
+    } else {
+      setTimeout(function () {
+        $(".scooter-in-card_black").css("z-index", "-1");
+      }, 200);
+    }
   });
 
-    // if($(".switch-btn_in-card").hasClass('switch-on')) {
-    //   $(".scooter-in-card").attr('src', 'assets/scooter-black.svg')
-    // }
+  // if($(".switch-btn_in-card").hasClass('switch-on')) {
+  //   $(".scooter-in-card").attr('src', 'assets/scooter-black.svg')
+  // }
 
   $(`${classesAndUrls[0][0]}`).click(function () {
     smootlyChangeFeaturesCardsBG(
@@ -181,61 +183,60 @@ $(function () {
         breakpoint: 563,
         settings: {
           vertical: false,
-          verticalSwiping: false
-        }
-      }
-    ]
+          verticalSwiping: false,
+        },
+      },
+    ],
   });
 });
 
 $(function () {
   try {
-  $(".multiple-item").slick({
-    infinite: true, // пришлось перейти на infinite так как при расширенни окна слайдер ломался
-    dots: false,
-    vertical: false,
-    verticalSwiping: false,
-    arrows: false,
-    draggable: false,
-    slidesToShow: 2.7,
-    slidesToScroll: 1,
-    centerMode: false,
-    centerPadding: "0px",
-    initialSlide: 1,
-    responsive: [
-      {
-        breakpoint: 1200,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 1
-        }
-      },
-      {
-        breakpoint: 992,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1
-        }
-      },
-      {
-        breakpoint: 563,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-          dots: true
-        }
-      },
-    ]
-  });
-} catch (error) {
-  console.debug('Ошибочка:', error);
-}
-
+    $(".multiple-item").slick({
+      infinite: true, // пришлось перейти на infinite так как при расширенни окна слайдер ломался
+      dots: false,
+      vertical: false,
+      verticalSwiping: false,
+      arrows: false,
+      draggable: false,
+      slidesToShow: 2.7,
+      slidesToScroll: 1,
+      centerMode: false,
+      centerPadding: "0px",
+      initialSlide: 1,
+      responsive: [
+        {
+          breakpoint: 1200,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 1,
+          },
+        },
+        {
+          breakpoint: 992,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+          },
+        },
+        {
+          breakpoint: 563,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            dots: true,
+          },
+        },
+      ],
+    });
+  } catch (error) {
+    console.debug("Ошибочка:", error);
+  }
 });
 
 $(".prev").click(function () {
   // if ($(".multiple-item").slick("slickCurrentSlide") > 1) {
-    $(".multiple-item").slick("slickPrev");
+  $(".multiple-item").slick("slickPrev");
   // } else {
   //   return;
   // }
