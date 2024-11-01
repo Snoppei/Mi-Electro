@@ -807,6 +807,10 @@
     height: 110%;
   }
 
+  .scooter-in-card_active {
+    z-index: 1;
+  }
+
   .delivery-set {
     display: none;
   }
@@ -1636,6 +1640,10 @@
     left: -7vw;
     z-index: 0;
     height: 40%;
+  }
+
+  .scooter-in-card_active {
+    z-index: 1;
   }
 
   .delivery-set {

@@ -846,16 +846,12 @@ body::-webkit-scrollbar-track {
     position: absolute;
     bottom: 5%;
     left: 30%;
-    z-index: 3;
+    z-index: 0;
     height: 110%;
   }
 
-  .scooter-in-card_white {
-    z-index: 0;
-  }
-
-  .scooter-in-card_black {
-    z-index: -1;
+  .scooter-in-card_active {
+    z-index: 1;
   }
 
   .footer {
@@ -1638,12 +1634,8 @@ body::-webkit-scrollbar-track {
     height: 110%;
   }
 
-  .scooter-in-card_white {
-    z-index: 0;
-  }
-
-  .scooter-in-card_black {
-    z-index: -1;
+  .scooter-in-card_active {
+    z-index: 1;
   }
 
   .footer {
@@ -2435,6 +2427,10 @@ body::-webkit-scrollbar-track {
     left: 35%;
     z-index: 0;
     height: 110%;
+  }
+
+  .scooter-in-card_active {
+    z-index: 1;
   }
 
   .delivery-set {

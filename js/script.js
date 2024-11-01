@@ -51,9 +51,9 @@ $(document).ready(function () {
   $(".switch-btn_in-card").click(function () {
     $(this).toggleClass("switch-on");
     if ($(".switch-btn_in-card").hasClass("switch-on")) {
-      $(".scooter-in-card_black").css("z-index", "1");
+      $(".scooter-in-card").toggleClass("scooter-in-card_active");
     } else {
-      $(".scooter-in-card_black").css("z-index", "-1");
+      $(".scooter-in-card").toggleClass("scooter-in-card_active");
     }
   });
 
