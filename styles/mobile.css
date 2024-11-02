@@ -58,7 +58,7 @@
   }
 
   h1 {
-    font-family: "Gilroy", sans-serif;
+    font-family: "Gilroy", Gilroy, sans-serif;
     font-weight: 600;
     font-size: 75px;
     line-height: 80px;
@@ -140,7 +140,7 @@
   .switch-btn__content {
     position: absolute;
     z-index: 2;
-    font-family: Gilroy;
+    font-family: "Gilroy", Gilroy, sans-serif;
     font-weight: 700;
     font-size: 14px;
     line-height: 24px;
@@ -171,7 +171,7 @@
 
   .title {
     color: #f1f1f1;
-    font-family: Gilroy;
+    font-family: "Gilroy", Gilroy, sans-serif;
     font-weight: 500;
     font-size: 43px;
     line-height: 49.5px;
@@ -223,7 +223,7 @@
 
   .features-point__title {
     color: #ff4c0d;
-    font-family: Gilroy;
+    font-family: "Gilroy", Gilroy, sans-serif;
     font-weight: 600;
     font-size: 20px;
     line-height: 24px;
@@ -233,7 +233,7 @@
   .features-point__text-content {
     margin-bottom: 15px;
     color: #f1f1f1;
-    font-family: Gilroy;
+    font-family: "Gilroy", Gilroy, sans-serif;
     font-weight: 400;
     font-size: 14px;
     line-height: 22.4px;
@@ -362,7 +362,7 @@
     margin-top: 5vh;
     padding: 15% 5vw 10px 5vw;
     color: #f1f1f1;
-    font-family: Gilroy;
+    font-family: "Gilroy", Gilroy, sans-serif;
     font-weight: 600;
     font-size: 20px;
     line-height: 24px;
@@ -372,7 +372,7 @@
   .feature-content {
     padding: 0 5vw 15% 5vw;
     color: #f1f1f1;
-    font-family: Gilroy;
+    font-family: "Gilroy", Gilroy, sans-serif;
     font-weight: 400;
     font-size: 14px;
     line-height: 21px;
@@ -680,7 +680,7 @@
 
   .review-point__title {
     color: #f1f1f1;
-    font-family: Gilroy;
+    font-family: "Gilroy", Gilroy, sans-serif;
     font-weight: 600;
     font-size: 20px;
     line-height: 24px;
@@ -697,7 +697,7 @@
   .review-point__text-content {
     padding: 0 10px 0 0;
     color: #f1f1f1;
-    font-family: Gilroy;
+    font-family: "Gilroy", Gilroy, sans-serif;
     font-weight: 400;
     font-size: 14px;
     line-height: 21px;
@@ -807,6 +807,10 @@
     height: 110%;
   }
 
+  .scooter-in-card_active {
+    z-index: 1;
+  }
+
   .delivery-set {
     display: none;
   }
@@ -889,7 +893,7 @@
   }
 
   h1 {
-    font-family: "Gilroy", sans-serif;
+    font-family: "Gilroy", Gilroy, sans-serif;
     font-weight: 600;
     font-size: 75px;
     line-height: 80px;
@@ -971,7 +975,7 @@
   .switch-btn__content {
     position: absolute;
     z-index: 2;
-    font-family: Gilroy;
+    font-family: "Gilroy", Gilroy, sans-serif;
     font-weight: 700;
     font-size: 16px;
     line-height: 24px;
@@ -1002,7 +1006,7 @@
 
   .title {
     color: #f1f1f1;
-    font-family: Gilroy;
+    font-family: "Gilroy", Gilroy, sans-serif;
     font-weight: 600;
     font-size: 25px;
     line-height: 30px;
@@ -1054,7 +1058,7 @@
 
   .features-point__title {
     color: #ff4c0d;
-    font-family: Gilroy;
+    font-family: "Gilroy", Gilroy, sans-serif;
     font-weight: 600;
     font-size: 16px;
     line-height: 19.2px;
@@ -1064,7 +1068,7 @@
   .features-point__text-content {
     margin-bottom: 15px;
     color: #f1f1f1;
-    font-family: Gilroy;
+    font-family: "Gilroy", Gilroy, sans-serif;
     font-weight: 400;
     font-size: 12px;
     line-height: 20.4px;
@@ -1194,7 +1198,7 @@
     margin-top: 5vh;
     padding: 15% 5vw 10px 5vw;
     color: #f1f1f1;
-    font-family: Gilroy;
+    font-family: "Gilroy", Gilroy, sans-serif;
     font-weight: 600;
     font-size: 20px;
     line-height: 24px;
@@ -1204,7 +1208,7 @@
   .feature-content {
     padding: 0 5vw 15% 5vw;
     color: #f1f1f1;
-    font-family: Gilroy;
+    font-family: "Gilroy", Gilroy, sans-serif;
     font-weight: 400;
     font-size: 14px;
     line-height: 21px;
@@ -1506,7 +1510,7 @@
 
   .review-point__title {
     color: #f1f1f1;
-    font-family: Gilroy;
+    font-family: "Gilroy", Gilroy, sans-serif;
     font-weight: 600;
     font-size: 20px;
     line-height: 24px;
@@ -1523,7 +1527,7 @@
   .review-point__text-content {
     padding: 0 10px 0 0;
     color: #f1f1f1;
-    font-family: Gilroy;
+    font-family: "Gilroy", Gilroy, sans-serif;
     font-weight: 400;
     font-size: 14px;
     line-height: 21px;
@@ -1636,6 +1640,10 @@
     left: -7vw;
     z-index: 0;
     height: 40%;
+  }
+
+  .scooter-in-card_active {
+    z-index: 1;
   }
 
   .delivery-set {

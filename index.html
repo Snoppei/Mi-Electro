@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mi-Electro</title>
+    <link rel="icon" href="assets/mi-icon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styles/fonts.css">
     <link rel="stylesheet" href="styles/desktop.css" />
     <link rel="stylesheet" href="styles/mobile.css" />
     <link
@@ -26,15 +28,15 @@
         />
         <img
           class="logo logo_orange"
-          src="assets/logo-orange.svg"
+          src="assets/logo-orange.png"
           alt="Mi-logo"
         />
         <nav class="nav-menu">
-          <a class="nav-menu__item" href="">О продукте</a>
-          <a class="nav-menu__item" href="">Внешний вид</a>
-          <a class="nav-menu__item" href="">Безопасность</a>
-          <a class="nav-menu__item" href="">Отзывы</a>
-          <a class="nav-menu__item" href="">FAQ</a>
+          <a class="nav-menu__item" href="#about">О продукте</a>
+          <a class="nav-menu__item" href="#design">Внешний вид</a>
+          <a class="nav-menu__item" href="#safety">Безопасность</a>
+          <a class="nav-menu__item" href="#reviews">Отзывы</a>
+          <a class="nav-menu__item" href="#faq">FAQ</a>
         </nav>
         <button class="button-buy">Купить</button>
         <button class="button-menu"></button>
@@ -54,7 +56,7 @@
           <div class="switch-btn__content switch-btn__content_second">Черный</div>
         </div>
       </div>
-      <div class="features">
+      <div class="features" id="about">
         <div class="features-title">
           <h2 class="title">
             Мощная батарея и экономичный расход<br />
@@ -119,9 +121,8 @@
         </div>
       </div>
     </section>
-
     <section class="section-features section-features_no-padding-bottom">
-      <div class="flex-container">
+      <div class="flex-container" id="design">
         <h2 class="title title_color">
           Лаконичный современный дизайн,<br />в котором нет ничего лишнего
         </h2>
@@ -167,7 +168,7 @@
           </div>
         </div>
       </div>
-      <div class="safety">
+      <div class="safety" id="safety">
         <h2 class="title title_color">Заботится о вашей безопасности</h2>
         <div class="features-list safety-list_flex">
           <div class="features-point safety-point_first">
@@ -291,7 +292,7 @@
         </div>
       </div>
     </section>
-    <section class="feedback">
+    <section class="feedback" id="reviews">
       <div class="feedback__title">
         <h2 class="title title_color">Отзывы о Mi Scooter Pro 2</h2>
       </div>
@@ -355,7 +356,7 @@
           <button class="next"></button>
         </div>
       </div>
-      <div class="feedback-info">
+      <div class="feedback-info" id="faq">
         <div class="feedback__questions">
           <div class="questions__ask">
             <h2 class="title title_color">Часто задаваемые вопросы</h2>
@@ -411,7 +412,7 @@
       </div>
       <div class="container-card">
         <img
-          class="scooter-in-card scooter-in-card_white"
+          class="scooter-in-card scooter-in-card_white scooter-in-card_active"
           src="assets/scooter-white.svg"
           alt="Белый самокат"
         />

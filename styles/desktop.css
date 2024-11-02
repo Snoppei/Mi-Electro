@@ -1,55 +1,5 @@
-@font-face {
-  font-family: "Gilroy";
-  src: url("../assets/fonts/Gilroy/Gilroy-Regular.ttf") format("truetype");
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Gilroy";
-  src: url("../assets/fonts/Gilroy/Gilroy-Medium.ttf") format("truetype");
-  font-weight: 500;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Gilroy";
-  src: url("../assets/fonts/Gilroy/Gilroy-SemiBold.ttf") format("truetype");
-  font-weight: 600;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Gilroy";
-  src: url("../assets/fonts/Gilroy/Gilroy-Bold.ttf") format("truetype");
-  font-weight: 700;
-  font-style: normal;
-  font-display: swap;
-}
-
-@keyframes smoothlyOpacity {
-  0% {
-    opacity: 1;
-  }
-
-  25% {
-    opacity: 0.5;
-  }
-
-  50% {
-    opacity: 0;
-  }
-
-  75% {
-    opacity: 0.5;
-  }
-
-  100% {
-    opacity: 1;
-  }
+html {
+  scroll-behavior: smooth;
 }
 
 body,
@@ -84,7 +34,6 @@ body::-webkit-scrollbar-track {
 }
 
 @media (min-width: 1300px) {
-  /* для desktop экранов более 1300 px */
   .header {
     display: grid;
     grid-template-columns: repeat(9, 1fr);
@@ -141,7 +90,7 @@ body::-webkit-scrollbar-track {
   }
 
   h1 {
-    font-family: "Gilroy", sans-serif;
+    font-family: "Gilroy", Gilroy, sans-serif;
     font-weight: 600;
     font-size: 80px;
     line-height: 80px;
@@ -223,7 +172,7 @@ body::-webkit-scrollbar-track {
   .switch-btn__content {
     position: absolute;
     z-index: 2;
-    font-family: Gilroy;
+    font-family: "Gilroy", Gilroy, sans-serif;
     font-weight: 700;
     font-size: 16px;
     line-height: 24px;
@@ -254,7 +203,7 @@ body::-webkit-scrollbar-track {
 
   .title {
     color: #f1f1f1;
-    font-family: Gilroy;
+    font-family: "Gilroy", Gilroy, sans-serif;
     font-weight: 500;
     font-size: 45px;
     line-height: 49.5px;
@@ -306,7 +255,7 @@ body::-webkit-scrollbar-track {
 
   .features-point__title {
     color: #f1f1f1;
-    font-family: Gilroy;
+    font-family: "Gilroy", Gilroy, sans-serif;
     font-weight: 600;
     font-size: 20px;
     line-height: 24px;
@@ -316,7 +265,7 @@ body::-webkit-scrollbar-track {
   .features-point__text-content {
     padding: 0 10px 0 0;
     color: #f1f1f1;
-    font-family: Gilroy;
+    font-family: "Gilroy", Gilroy, sans-serif;
     font-weight: 400;
     font-size: 14px;
     line-height: 21px;
@@ -442,7 +391,7 @@ body::-webkit-scrollbar-track {
   .feature-title {
     padding: 20% 3vw 15px 3vw;
     color: #f1f1f1;
-    font-family: Gilroy;
+    font-family: "Gilroy", Gilroy, sans-serif;
     font-weight: 600;
     font-size: 20px;
     line-height: 24px;
@@ -452,7 +401,7 @@ body::-webkit-scrollbar-track {
   .feature-content {
     padding: 0 3vw 10px 3vw;
     color: #f1f1f1;
-    font-family: Gilroy;
+    font-family: "Gilroy", Gilroy, sans-serif;
     font-weight: 400;
     font-size: 14px;
     line-height: 21px;
@@ -730,7 +679,7 @@ body::-webkit-scrollbar-track {
 
   .review-point__title {
     color: #f1f1f1;
-    font-family: Gilroy;
+    font-family: "Gilroy", Gilroy, sans-serif;
     font-weight: 600;
     font-size: 20px;
     line-height: 24px;
@@ -747,7 +696,7 @@ body::-webkit-scrollbar-track {
   .review-point__text-content {
     padding: 0 10px 0 0;
     color: #f1f1f1;
-    font-family: Gilroy;
+    font-family: "Gilroy", Gilroy, sans-serif;
     font-weight: 400;
     font-size: 14px;
     line-height: 21px;
@@ -846,16 +795,12 @@ body::-webkit-scrollbar-track {
     position: absolute;
     bottom: 5%;
     left: 30%;
-    z-index: 3;
+    z-index: 0;
     height: 110%;
   }
 
-  .scooter-in-card_white {
-    z-index: 0;
-  }
-
-  .scooter-in-card_black {
-    z-index: -1;
+  .scooter-in-card_active {
+    z-index: 1;
   }
 
   .footer {
@@ -929,7 +874,7 @@ body::-webkit-scrollbar-track {
   }
 
   h1 {
-    font-family: "Gilroy", sans-serif;
+    font-family: "Gilroy", Gilroy, sans-serif;
     font-weight: 600;
     font-size: 60px;
     line-height: 80px;
@@ -1011,7 +956,7 @@ body::-webkit-scrollbar-track {
   .switch-btn__content {
     position: absolute;
     z-index: 2;
-    font-family: Gilroy;
+    font-family: "Gilroy", Gilroy, sans-serif;
     font-weight: 700;
     font-size: 16px;
     line-height: 24px;
@@ -1042,7 +987,7 @@ body::-webkit-scrollbar-track {
 
   .title {
     color: #f1f1f1;
-    font-family: Gilroy;
+    font-family: "Gilroy", Gilroy, sans-serif;
     font-weight: 500;
     font-size: 45px;
     line-height: 49.5px;
@@ -1094,7 +1039,7 @@ body::-webkit-scrollbar-track {
 
   .features-point__title {
     color: #f1f1f1;
-    font-family: Gilroy;
+    font-family: "Gilroy", Gilroy, sans-serif;
     font-weight: 600;
     font-size: 14px;
     line-height: 24px;
@@ -1104,7 +1049,7 @@ body::-webkit-scrollbar-track {
   .features-point__text-content {
     padding: 0 10px 0 0;
     color: #f1f1f1;
-    font-family: Gilroy;
+    font-family: "Gilroy", Gilroy, sans-serif;
     font-weight: 400;
     font-size: 14px;
     line-height: 21px;
@@ -1230,7 +1175,7 @@ body::-webkit-scrollbar-track {
   .feature-title {
     padding: 20% 5vh 15px 5vh;
     color: #f1f1f1;
-    font-family: Gilroy;
+    font-family: "Gilroy", Gilroy, sans-serif;
     font-weight: 600;
     font-size: 20px;
     line-height: 24px;
@@ -1240,7 +1185,7 @@ body::-webkit-scrollbar-track {
   .feature-content {
     padding: 0 5vh 10px 5vh;
     color: #f1f1f1;
-    font-family: Gilroy;
+    font-family: "Gilroy", Gilroy, sans-serif;
     font-weight: 400;
     font-size: 14px;
     line-height: 21px;
@@ -1518,7 +1463,7 @@ body::-webkit-scrollbar-track {
 
   .review-point__title {
     color: #f1f1f1;
-    font-family: Gilroy;
+    font-family: "Gilroy", Gilroy, sans-serif;
     font-weight: 600;
     font-size: 20px;
     line-height: 24px;
@@ -1535,7 +1480,7 @@ body::-webkit-scrollbar-track {
   .review-point__text-content {
     padding: 0 10px 0 0;
     color: #f1f1f1;
-    font-family: Gilroy;
+    font-family: "Gilroy", Gilroy, sans-serif;
     font-weight: 400;
     font-size: 14px;
     line-height: 21px;
@@ -1638,12 +1583,8 @@ body::-webkit-scrollbar-track {
     height: 110%;
   }
 
-  .scooter-in-card_white {
-    z-index: 0;
-  }
-
-  .scooter-in-card_black {
-    z-index: -1;
+  .scooter-in-card_active {
+    z-index: 1;
   }
 
   .footer {
@@ -1717,7 +1658,7 @@ body::-webkit-scrollbar-track {
   }
 
   h1 {
-    font-family: "Gilroy", sans-serif;
+    font-family: "Gilroy", Gilroy, sans-serif;
     font-weight: 600;
     font-size: 80px;
     line-height: 80px;
@@ -1811,7 +1752,7 @@ body::-webkit-scrollbar-track {
   .switch-btn__content {
     position: absolute;
     z-index: 2;
-    font-family: Gilroy;
+    font-family: "Gilroy", Gilroy, sans-serif;
     font-weight: 700;
     font-size: 16px;
     line-height: 24px;
@@ -1842,7 +1783,7 @@ body::-webkit-scrollbar-track {
 
   .title {
     color: #f1f1f1;
-    font-family: Gilroy;
+    font-family: "Gilroy", Gilroy, sans-serif;
     font-weight: 500;
     font-size: 45px;
     line-height: 49.5px;
@@ -1894,7 +1835,7 @@ body::-webkit-scrollbar-track {
 
   .features-point__title {
     color: #f1f1f1;
-    font-family: Gilroy;
+    font-family: "Gilroy", Gilroy, sans-serif;
     font-weight: 600;
     font-size: 14px;
     line-height: 24px;
@@ -1904,7 +1845,7 @@ body::-webkit-scrollbar-track {
   .features-point__text-content {
     padding: 0 10px 0 0;
     color: #f1f1f1;
-    font-family: Gilroy;
+    font-family: "Gilroy", Gilroy, sans-serif;
     font-weight: 400;
     font-size: 14px;
     line-height: 21px;
@@ -2030,7 +1971,7 @@ body::-webkit-scrollbar-track {
   .feature-title {
     padding: 15% 1vw 10px 1vw;
     color: #f1f1f1;
-    font-family: Gilroy;
+    font-family: "Gilroy", Gilroy, sans-serif;
     font-weight: 600;
     font-size: 20px;
     line-height: 24px;
@@ -2040,7 +1981,7 @@ body::-webkit-scrollbar-track {
   .feature-content {
     padding: 0 1vw 15% 1vw;
     color: #f1f1f1;
-    font-family: Gilroy;
+    font-family: "Gilroy", Gilroy, sans-serif;
     font-weight: 400;
     font-size: 14px;
     line-height: 21px;
@@ -2318,7 +2259,7 @@ body::-webkit-scrollbar-track {
 
   .review-point__title {
     color: #f1f1f1;
-    font-family: Gilroy;
+    font-family: "Gilroy", Gilroy, sans-serif;
     font-weight: 600;
     font-size: 20px;
     line-height: 24px;
@@ -2335,7 +2276,7 @@ body::-webkit-scrollbar-track {
   .review-point__text-content {
     padding: 0 10px 0 0;
     color: #f1f1f1;
-    font-family: Gilroy;
+    font-family: "Gilroy", Gilroy, sans-serif;
     font-weight: 400;
     font-size: 14px;
     line-height: 21px;
@@ -2435,6 +2376,10 @@ body::-webkit-scrollbar-track {
     left: 35%;
     z-index: 0;
     height: 110%;
+  }
+
+  .scooter-in-card_active {
+    z-index: 1;
   }
 
   .delivery-set {
